@@ -1,0 +1,20 @@
+.page-name-div {
+    margin-top: -20px;
+    background-color: rgba(4, 57, 98, 1);
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.page-name-text {
+    flex: 500px;
+    color: white;
+    font-size: 30px;
+}
+
+.div-padding {
+    flex: 1;
+}

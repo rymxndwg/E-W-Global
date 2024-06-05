@@ -13,6 +13,12 @@
 
     </head>
     <body>
+        <script>
+            function openPage(pageUrl){
+                window.location.replace(pageUrl);
+            }
+        </script>
+
         <div class="header">
             <div class="left-header-sec">
                 <a href="index.html">
@@ -21,13 +27,13 @@
             </div>
 
             <div class="mid-header-sec">
-                <div class="home-selector-line selector-line">
+                <div class="home-selector-line selector-line" onclick="openPage('index.html')">
                     <a class="header-link" href="index.html">Home</a>
                 </div>
-                <div class="selector-line">
+                <div class="selector-line" onclick="openPage('aboutus.html')">
                     <a class="header-link" href="aboutus.html">About Us</a>
                 </div>
-                <div class="selector-line">
+                <div class="selector-line" onclick="openPage('services.html')">
                     <div class="dropdown">
                         <a class="header-link" href="services.html">Services</a>
                         <div class="content">
@@ -45,10 +51,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="selector-line">
-                    <a class="header-link" href="calcualtor.html">Compare Rates</a>
+                <div class="selector-line" onclick="openPage('calculator.html')">
+                    <a class="header-link" href="calculator.html">Compare Rates</a>
                 </div>
-                <div class="selector-line">
+                <div class="selector-line" onclick="openPage('contact.html')">
                     <a class="header-link" href="contact.html">Contact Us</a>
                 </div>
             </div>

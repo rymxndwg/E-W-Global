@@ -1,0 +1,104 @@
+.loan-name-div {
+    margin-top: -20px;
+    background-color: rgba(4, 57, 98, 1);
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.loan-name-text {
+    flex: 500px;
+    color: white;
+    font-size: 30px;
+}
+
+.div-padding {
+    flex: 1;
+}
+
+.hero-div {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-hero-side {
+    flex: 1;
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-div {
+    background-image: url("../Images/Commercial.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 35vw;
+    height: 35vh;
+    margin-top: -50px;
+    margin-right: -50px;
+}
+
+.right-hero-side {
+    flex: 1;
+    width: 50vw;
+    height: 50vh;
+}
+
+.our-services-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+.our-services-text {
+    font-size: 20px;
+    width: 600px;
+    line-height: 35px;
+}
+
+.why-us-div {
+    margin-top: -80px;
+    padding: 0px 150px;
+}
+
+.why-us-title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.why-us-text {
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.contact-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.welcome-btn {
+    background-color: white;
+    color: #07568d;
+    border-color: #07568d;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 20px;
+    transition: 0.25s;
+    margin-top: 10px;
+}
+
+.welcome-btn:hover {
+    background-color: #07568d;
+    color: white;
+    cursor: pointer;
+}

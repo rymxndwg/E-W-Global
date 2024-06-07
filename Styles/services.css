@@ -22,7 +22,7 @@
 .services-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    row-gap: 50px;
+    row-gap: 40px;
     column-gap: 50px;
     margin: 50px;
 }
@@ -61,7 +61,75 @@
 
 .service-name {
     position: absolute;
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
     color: rgb(255, 255, 255);
+}
+
+@media (max-width: 1500px) {
+    .services-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 50px;
+        column-gap: 50px;
+        margin: 50px;
+    }
+
+    .service-name {
+        position: absolute;
+        font-size: 35px;
+        text-align: center;
+        color: rgb(255, 255, 255);
+    }
+}
+
+@media (max-width: 1250px) {
+    .services-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 50px;
+        column-gap: 50px;
+        margin: 50px;
+    }
+
+    .service-name {
+        position: absolute;
+        font-size: 35px;
+        text-align: center;
+        color: rgb(255, 255, 255);
+    }
+}
+
+@media (max-width: 700px) {
+    .services-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 50px;
+        column-gap: 50px;
+        margin: 50px;
+    }
+
+    .service-name {
+        position: absolute;
+        font-size: 25px;
+        text-align: center;
+        color: rgb(255, 255, 255);
+    }
+}
+
+@media (max-width: 500px) {
+    .services-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 50px;
+        column-gap: 50px;
+        margin: 50px;
+    }
+
+    .service-name {
+        position: absolute;
+        font-size: 25px;
+        text-align: center;
+        color: rgb(255, 255, 255);
+    }
 }

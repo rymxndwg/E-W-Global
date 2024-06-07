@@ -11,3 +11,8 @@ a {
     text-decoration: none;
     border-color: #07568D;
 }
+
+p {
+    margin: none;
+    padding: none;
+}

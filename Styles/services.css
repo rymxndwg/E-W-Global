@@ -35,6 +35,10 @@
     cursor: pointer;
 }
 
+.service-container:hover .service-img {
+    filter: contrast(20%);
+}
+
 .service-bar {
     background-color: rgba(4, 57, 98, 1);
     height: 20px;

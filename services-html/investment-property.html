@@ -11,31 +11,36 @@
         <link rel="stylesheet" href="../Styles/general.css">
         <link rel="stylesheet" href="../Styles/investment-property.css">
 
+        <script src="https://kit.fontawesome.com/da85db3896.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <script>
-            function openPage(pageUrl){
-                window.location.replace(pageUrl);
-            }
-        </script>
-        
         <div class="header">
             <div class="left-header-sec">
-                <a href="../index.html">
-                    <img class="header-logo" src="../Images/Logo.png">
+                <a class="header-link-logo" href="../index.html">
+                    <img class="header-logo" src="../Images/Logo.png" onclick="openPage('index.html')">
                 </a>
             </div>
 
             <div class="mid-header-sec">
-                <div class="selector-line" onclick="openPage('index.html')">
-                    <a class="header-link" href="../index.html">Home</a>
+                <img class="hamburger-img" src="../Icons/Hamburger.png" onclick="openSidebar()">
+                <div class="home-selector-line selector-line" onclick="openPage('../index.html')">
+                    <a class="header-link" href="../index.html">
+                        <i class="fas fa-home"></i>
+                        Home
+                    </a>
                 </div>
-                <div class="selector-line" onclick="openPage('aboutus.html')">
-                    <a class="header-link" href="../aboutus.html">About Us</a>
+                <div class="selector-line" onclick="openPage('../aboutus.html')">
+                    <a class="header-link" href="../aboutus.html">
+                        <i class="fas fa-globe"></i>
+                        About Us
+                    </a>
                 </div>
-                <div class="home-selector-line selector-line" onclick="openPage('services.html')">
+                <div class="selector-line" onclick="openPage('../services.html')">
                     <div class="dropdown">
-                        <a class="header-link" href="../services.html">Services</a>
+                        <a class="header-link" href="../services.html">
+                            <i class="fas fa-lightbulb"></i>
+                            Services
+                        </a>
                         <div class="content">
                             <a class="service-link" href="primary-property-loan.html">Primary Property Loans</a>
                             <a class="service-link" href="investment-property.html">Investment Property Loans</a>
@@ -51,16 +56,77 @@
                         </div>
                     </div>
                 </div>
-                <div class="selector-line" onclick="openPage('calculator.html')">
-                    <a class="header-link" href="../calculator.html">Compare Rates</a>
+
+                <div class="selector-line" onclick="openPage('../calculator.html')">
+                    <a class="header-link" href="../calculator.html">
+                        <i class="fas fa-line-chart"></i>
+                        Compare Rates
+                    </a>
                 </div>
-                <div class="selector-line" onclick="openPage('contact.html')">
-                    <a class="header-link" href="../contact.html">Contact Us</a>
+
+                <div class="selector-line" onclick="openPage('../contact.html')">
+                    <a class="header-link" href="../contact.html">
+                        <i class="fas fa-envelope"></i>
+                        Contact Us
+                    </a>
                 </div>
             </div>
 
             <div class="right-header-sec">
-                <a class="header-number">929-988-1689</a>
+                <a class="header-number">
+                    <i class="fas fa-phone"></i>
+                    929-988-1689
+                </a>
+            </div>
+        </div>
+
+        <div class="menu-outside" onclick="closeSidebar()"></div>
+
+        <div class="menu">
+            <nav>
+                <div class="ham-x" onclick="closeSidebar()">
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+
+            <div class="phone-number-div">
+                <div class="phone-number">
+                    <i class="fas fa-phone"></i>
+                    929-988-1689
+                </div>
+            </div>
+
+            <div class="menu-selector-div">
+                <a class="menu-link" href="../index.html">
+                    <i class="fas fa-home"></i>
+                    Home
+                </a>
+            </div>
+            <div class="menu-selector-div">
+                <a class="menu-link" href="../aboutus.html">
+                    <i class="fas fa-globe"></i>
+                    About Us
+                </a>
+            </div>
+            <div class="menu-selector-div">
+                <a class="menu-link" href="../services.html">
+                    <i class="fas fa-lightbulb"></i>
+                    Services
+                </a>
+            </div>
+
+            <div class="menu-selector-div">
+                <a class="menu-link" href="../calculator.html">
+                    <i class="fas fa-line-chart"></i>
+                    Compare Rates
+                </a>
+            </div>
+            <div class="menu-selector-div">
+                <a class="menu-link" href="../contact.html">
+                    <i class="fas fa-envelope"></i>
+                    Contact Us
+                </a>
             </div>
         </div>
 
@@ -98,5 +164,28 @@
                 </button>
             </a>
         </div>
+
+        <script>
+            function openPage(pageUrl) {
+                window.location.replace(pageUrl);
+            }
+            
+            function openSidebar() {
+                const hamMenu = document.querySelector('.menu');
+                hamMenu.classList.toggle('active');
+
+                const hamMenuOutside = document.querySelector('.menu-outside');
+                hamMenuOutside.classList.toggle('active');
+            }
+
+            function closeSidebar() {
+                const hamMenu = document.querySelector('.menu');
+                hamMenu.classList.remove('active');
+
+                const hamMenuOutside = document.querySelector('.menu-outside');
+                hamMenuOutside.classList.remove('active');
+            }
+
+        </script>
     </body>
 </html>

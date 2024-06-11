@@ -133,3 +133,23 @@
         color: rgb(255, 255, 255);
     }
 }
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) { 
+    .services-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 50px;
+        column-gap: 50px;
+        margin: 50px;
+    }
+
+    .service-name {
+        position: absolute;
+        font-size: 35px;
+        text-align: center;
+        color: rgb(255, 255, 255);
+    }
+}

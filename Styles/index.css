@@ -57,7 +57,7 @@
     width: 50vw;
     filter: sepia(0%) saturate(200%) brightness(70%) hue-rotate(0deg);
     z-index: -5;
-    height: 100vh;
+    height: 90vh;
 }
 
 .contact-us-title {

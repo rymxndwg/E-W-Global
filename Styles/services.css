@@ -153,3 +153,43 @@
         color: rgb(255, 255, 255);
     }
 }
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px)and (-webkit-min-device-pixel-ratio: 2) {
+    .services-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 50px;
+        column-gap: 50px;
+        margin: 50px;
+    }
+
+    .service-name {
+        position: absolute;
+        font-size: 35px;
+        text-align: center;
+        color: rgb(255, 255, 255);
+    }
+}
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px)and (-webkit-min-device-pixel-ratio: 2) {
+    .services-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 100px;
+        column-gap: 100px;
+        margin: 50px 200px;
+    }
+
+    .service-name {
+        position: absolute;
+        font-size: 35px;
+        text-align: center;
+        color: rgb(255, 255, 255);
+    }
+}

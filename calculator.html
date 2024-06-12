@@ -166,7 +166,7 @@
                     <p>Loan Amount: </p>
                     <div class="money-group">
                         <p class="money">$</p>
-                        <input class="home-input" type="number" value="250000">
+                        <input class="loan-amount" type="number" value="250000">
                     </div>
                 </div>
 
@@ -248,18 +248,52 @@
                     <p>Monthly HOA: </p>
                     <div class="money-group">
                         <p class="money">$</p>
-                        <input class="home-input" type="number" value="0">
+                        <input class="hoa" type="number" value="0">
                     </div>
                 </div>
             </div>
 
             <div class="calculator-graph">
+                <div class="monthly-display">
+                    <p class="monthly-display-number">$200</p>
+                    <p class="display-msg">Your estimated monthly payment <span class="with-pmi-msg">with PMI</span></p>
+                </div>
 
+                <div class="pmi-data">
+                    <div class="pmi-section">
+                        <p class="pmi-name">PMI: </p>
+                        <p class="pmi-number">$200</p>
+                    </div>
+                    <div class="tax-section">
+                        <p class="tax-name">Monthly Tax Paid: </p>
+                        <p class="tax-number">$200</p>
+                    </div>
+                    <div class="insurance-section">
+                        <p class="insurance-name">Monthly Insurance Paid: </p>
+                        <p class="insurance-number">$200</p>
+                    </div>
+
+                    <div class="bottom-border"></div>
+                </div>
+
+                <div class="chart-container">
+                    <div class="chart">
+                        <canvas class="my-chart">
+
+                        </canvas>
+                    </div>
+
+                    <div class="chart-details">
+                        <ul>
+                        </ul>
+                    </div>
+                </div>
             </div>
 
 
         </div>
 
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script>
             function openPage(pageUrl) {
                 window.location.replace(pageUrl);
@@ -328,7 +362,81 @@
             monthInput.value = currentMonth;
             yearInput.value = currentYr;
             
-            console.log(currentMonth, currentYr);
+            let interestRate = document.querySelector(".interest-rate").value / 1200;
+            let principal =  parseFloat(document.querySelector(".loan-amount").value);
+            let n = document.querySelector(".loan-term").value * 12;
+            
+            let topPayment = Math.pow(1 + interestRate, n) * interestRate;
+            let botPayment = Math.pow(1 + interestRate, n) -1;
+            let baseMonthPayment = principal * (topPayment/botPayment);
+
+            let pmiPayment = (principal * (document.querySelector(".pmi").value / 100)) / 12;
+            let hoaFee = document.querySelector(".hoa").value /12;
+            let insuranceFee = document.querySelector(".home-insurance").value / 12;
+            let taxFee = document.querySelector(".property-tax").value / 12;
+
+            let totalMonthPayment = baseMonthPayment + pmiPayment + hoaFee + insuranceFee + taxFee;
+
+            function convertNumber(curNum) {
+                let newVal = curNum.toFixed(2);
+                return `$${newVal}`
+            }
+
+            function updateGraph() {
+                const monthlyTitleDisplay = document.querySelector(".monthly-display-number");
+                const pmiDisplay = document.querySelector(".pmi-number");
+                const taxDisplay = document.querySelector(".tax-number");
+                const insuranceDisplay = document.querySelector(".insurance-number");
+
+                monthlyTitleDisplay.innerHTML = convertNumber(totalMonthPayment);
+                pmiDisplay.innerHTML = convertNumber(pmiPayment);
+                taxDisplay.innerHTML = convertNumber(taxFee);
+                insuranceDisplay.innerHTML = convertNumber(insuranceFee);
+            }
+
+            updateGraph();
+
+            const chartData = {
+                labels: ["DownPayment", "Principal", "Interest", "Taxes", "HOA&Insurance"],
+                data: [30, 30, 20, 10, 10],
+            };
+
+            const myChart = document.querySelector(".my-chart");
+
+            new Chart(myChart, {
+                type: "doughnut",
+                data: {
+                    labels: chartData.labels,
+                    datasets: [
+                        {
+                            label: "Payment Breakdown",
+                            data: chartData.data,
+                        }
+                    ],
+                },
+                options: {
+                    borderWidth: 10,
+                    borderRadius: 2,
+                    hoverBorderWidth: 0,
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    }
+                },
+            });
+
+            const ul = document.querySelector(".chart-container .chart-details ul");
+
+            const populateUl = () => {
+                chartData.labels.forEach((l, i) => {
+                    let li = document.createElement("li");
+                    li.innerHTML = `${l}: <span class="percentage">${chartData.data[i]}%</span>`;
+                    ul.append(li);
+                });
+            };
+
+            populateUl();
         </script>
     </body>
 </html>

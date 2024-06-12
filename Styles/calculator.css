@@ -22,6 +22,8 @@
 .calculator-home {
     display: flex;
     justify-content: center;
+    gap: 50px;
+    margin-top: 25px;
 }
 
 .input-div {
@@ -115,7 +117,7 @@
     border-style: solid;
 }
 
-.home-input {
+.home-input, .loan-amount, .hoa {
     border-color: rgb(206, 212, 218);
     border-style: solid;
     border-radius: 0px 4px 4px 0px;
@@ -186,6 +188,80 @@
     transform: translateY(-50%);
     left: 0;
     pointer-events: none;
+}
+
+.calculator-graph {
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px 10px 0px 0px;
+}
+
+.monthly-display {
+    padding: 15px 30px;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 10px 10px 0px 0px;
+}
+
+.monthly-display-number {
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0px;
+}
+
+.display-msg {
+    font-size: 15px;
+    width: 280px;
+}
+
+.pmi-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.pmi-section, .tax-section, .insurance-section {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    font-size: 13px;
+}
+
+.pmi-section p, .tax-section p, .insurance-section p {
+    margin: 5px 0px;
+}
+
+.bottom-border {
+    width: 80%;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    margin-top: 15px;
+}
+
+.chart {
+    width: 150px;
+}
+
+.chart-container {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.chart-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.chart-details ul li {
+    font-size: 13px;
+    margin: 12px 0px;
+    text-transform: uppercase;
+}
+
+.chart-details ul li .percentage {
+    font-weight: 700;
 }
 
 @media screen and (max-width: 700px) {

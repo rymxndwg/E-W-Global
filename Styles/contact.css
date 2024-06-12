@@ -97,12 +97,25 @@
     transition: 0.25s;
 }
 
+.input-box-select {
+    padding: 10px;
+    width: 420px;
+    background-color: white;
+    transition: 0.25s;
+    border-width: 2px;
+}
+
+.input-box-select, .input-box {
+    border-style: solid;
+    border-color: black;
+}
+
 .input-textarea {
     border-color: black;
     border-width: 2px;
 }
 
-.input-box:hover {
+.input-box:hover, .input-box-select:hover {
     background-color: rgba(4, 57, 98, 0.5);
     border-style: solid;
     border-color: rgba(255, 255, 255, 0.8);
@@ -285,7 +298,9 @@
     .contact-section-div {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         width: 100vw;
+        position: relative;
     }
 
     .left-contact-picture {
@@ -336,7 +351,6 @@
 
     .right-contact-div {
         width: 100vw;
-        margin-top: 10vh;
     }
 
     .right-contact-box {
@@ -369,6 +383,150 @@
 
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) { 
+    .get-in-touch-div {
+        margin-top: -20px;
+        background-color: rgba(4, 57, 98, 1);
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
+    }
+    
+    .get-in-touch-text {
+        color: white;
+        font-size: 60px;
+    }
+
+    .left-contact-picture {
+        width: 100vw;
+        height: 70vh;
+        background-image: url("../Images/lady.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    .right-contact-picture {
+        background-image: url("../Images/CityView.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw;
+        height: 70vh;
+        filter: contrast(50%);
+    }
+
+    .contact-section-div {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        justify-content: space-between;
+        width: 100vw;
+        height: 140vh;
+    }
+
+    .left-contact-div {
+        margin-top: 0;
+        width: 100vw;
+        height: 1300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-info {
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 800px;
+        height: 1400px;
+        margin-top: -2vw;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+    
+    .contact-form {
+        margin-top: -1px;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+    
+    .contact-title {
+        font-size: 80px;
+        text-align: center;
+        margin-top: 100px;
+        font-weight: bold;
+        color: #486595;
+    }
+    
+    .contact-msg {
+        width: 700px;
+        color: black;
+        font-size: 40px;
+    }
+    
+    .input-name {
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-size: 35px;
+    }
+    
+    .input-box {
+        padding: 10px;
+        width: 700px;
+        background-color: white;
+        transition: 0.25s;
+        font-size: 35px;
+    }
+
+    .input-box-select {
+        padding: 10px;
+        width: 700px;
+        background-color: white;
+        transition: 0.25s;
+        border-width: 2px;
+        font-size: 35px;
+    }
+    
+    .input-box-select, .input-box {
+        border-style: solid;
+        border-color: black;
+    }
+    
+    .input-textarea {
+        border-color: black;
+        border-width: 2px;
+        
+    }
+    
+    .input-box:hover, .input-box-select:hover {
+        background-color: rgba(4, 57, 98, 0.5);
+        border-style: solid;
+        border-color: rgba(255, 255, 255, 0.8);
+        border-width: 3px;
+        color: white;
+    }
+    
+    .input-box:hover::placeholder {
+        color: white;
+    }
+    
+    .contact-input-field button {
+        margin-top: -20px;
+        padding: 20px 30px;
+        background-color: #07568d;
+        color: white;
+        border-width: 0px;
+        transition: 0.25s;
+    }
+    
+    .contact-input-field button:hover {
+        cursor: pointer;
+        background-color: rgb(224, 184, 3);
+    }
+    
 }
 
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */

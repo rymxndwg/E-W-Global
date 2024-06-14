@@ -192,7 +192,7 @@
 
 .calculator-graph {
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 5px;
 }
 
 .monthly-display {
@@ -212,21 +212,21 @@
     width: 280px;
 }
 
-.pmi-data {
+.pmi-data, .pmi-end-data {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 15px;
 }
 
-.pmi-section, .tax-section, .insurance-section {
+.pmi-section, .tax-section, .insurance-section, .pmi-end-section, .total-pmi-section, .base-month-section, .hoa-section {
     display: flex;
     justify-content: space-between;
     width: 80%;
     font-size: 13px;
 }
 
-.pmi-section p, .tax-section p, .insurance-section p {
+.pmi-section p, .tax-section p, .insurance-section p, .pmi-end-section p, .total-pmi-section p, .base-month-section p, .hoa-section p {
     margin: 5px 0px;
 }
 
@@ -238,6 +238,13 @@
     margin-top: 15px;
 }
 
+.chart-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 45px;
+}
+
 .chart {
     width: 150px;
 }
@@ -245,7 +252,7 @@
 .chart-container {
     display: flex;
     align-items: center;
-    margin: 0 auto;
+    margin: 0 auto 25px auto;
     width: fit-content;
 }
 
@@ -257,12 +264,158 @@
 .chart-details ul li {
     font-size: 13px;
     margin: 12px 0px;
-    text-transform: uppercase;
 }
 
 .chart-details ul li .percentage {
     font-weight: 700;
 }
+
+.DownPayment-block {
+    width: 5px;
+    height: 5px;
+    background-color: rgb(0, 53, 89);
+    color: rgb(0, 53, 89);
+}
+
+.Principal-block {
+    width: 5px;
+    height: 5px;
+    background-color: rgb(0, 109, 170);
+    color: rgb(0, 109, 170);
+}
+
+.Interest-block {
+    width: 5px;
+    height: 5px;
+    background-color: rgb(3, 83, 164);
+    color: rgb(3, 83, 164);
+}
+
+.Taxes-block {
+    width: 5px;
+    height: 5px;
+    background-color: rgb(6, 26, 64);
+    color: rgb(6, 26, 64);
+}
+
+.HOA-Insurance-block {
+    width: 5px;
+    height: 5px;
+    background-color: rgb(185, 214, 242);
+    color: rgb(185, 214, 242);
+}
+
+.pmi-section.active {
+    display: flex;
+}
+
+.pmi-section {
+    display: none;
+}
+
+.pmi-end-data.active {
+    display: flex;
+}
+
+.pmi-end-data {
+    display: none;
+}
+
+.insurance-section.active {
+    display: flex;
+}
+
+.insurance-section {
+    display: none;
+}
+
+.hoa-section.active {
+    display: flex;
+}
+
+.hoa-section {
+    display: none;
+}
+
+.amorization-section {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px 25px;
+    margin-bottom: 25px;
+}
+
+.amorization-btn {
+    background-color: white;
+    border-color: rgb(0, 109, 170);
+    color: rgb(0, 109, 170);
+    border-style: solid;
+    padding: 7px 10px;
+    border-radius: 4px;
+    border-width: 2px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.amorization-btn:hover {
+    background-color: rgb(0, 109, 170);
+    color: white;
+    transform: scale(1.1);
+}
+
+.amorization-schedule {
+    display: none;
+}
+
+.amorization-schedule.active {
+    display: block;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    width: 800px;
+    margin: 50px auto;
+    padding: 10px 25px;
+}
+
+.amorization-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.amorization-text {
+    font-size: 15px;
+    margin: 5px 0px;
+}
+
+.amorization-container {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 15px;
+}
+
+.amorization-column-title {
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+.amorization-year-container {
+    display: flex;
+    flex-direction: column;
+    flex: 0.5;
+}
+
+.amorization-data-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 0.5;
+}
+
+.amorization-interest-container, .amorization-principal-container, .amorization-balance-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 
 @media screen and (max-width: 700px) {
     .slider {

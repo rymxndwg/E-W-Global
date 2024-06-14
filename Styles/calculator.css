@@ -535,6 +535,7 @@
         align-items: center;
         gap: 50px;
         margin-top: 25px;
+        margin-bottom: 75px;
     }
 
     .calculator-form {
@@ -549,7 +550,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 820px;
+        width: 720px;
         height: 50px;
         margin: 15px 0px;
 
@@ -572,10 +573,10 @@
         border-width: 1px 1px 1px 1px;
         border-color: rgb(206, 212, 218);
         border-style: solid;
-        padding: 5px 8px 6px 8px;
+        padding: 9px 10px 10px 10px;
         border-radius: 4px 0px 0px 4px;
         background-color: rgb(233, 236, 239);
-        font-size: 30px;
+        font-size: 25px;
     }
     
     .down-money, .down-percent {
@@ -588,8 +589,8 @@
         width: 110px;
         border-radius: 4px 0px 0px 4px;
         border-width: 1px 1px 1px 1px;
-        padding: 4px 0px 4px 10px;
-        height: 31px;
+        padding: 10px 0px 10px 10px;
+        height: 50px;
         border-color: rgb(206, 212, 218);
         border-style: solid;
     }
@@ -636,7 +637,7 @@
     
     .percent {
         border-width: 1px 1px 1px 0px;
-        padding: 5px 8px 6px 8px;
+        padding: 9px 10px 10px 10px;
         border-radius: 0px 4px 4px 0px;
     }
     
@@ -659,7 +660,7 @@
     }
     
     .calculator-graph {
-        width: 70%;
+        width: 80%;
         box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
         border-radius: 5px;
     }
@@ -682,10 +683,21 @@
         padding: 10px 25px;
     }
 
+    .amorization-title {
+        font-size: 30px;
+        margin: 5px 0px;
+    }
+
+    .amorization-text {
+        font-size: 20px;
+    }
+
     .amorization-year-container {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         flex: 0.5;
+        font-size: 25px;
     }
     
     .amorization-data-container {
@@ -693,25 +705,927 @@
         flex-direction: row;
         justify-content: space-between;
         flex: 0.5;
+        font-size: 25px;
+    }
+
+    .monthly-display-number {
+        font-weight: bold;
+        font-size: 60px;
+        margin: 0px;
+    }
+    
+    .display-msg {
+        font-size: 25px;
+        width: 500px;
+    }
+    
+    .pmi-data, .pmi-end-data {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+    }
+    
+    .pmi-section, .tax-section, .insurance-section, .pmi-end-section, .total-pmi-section, .base-month-section, .hoa-section {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        font-size: 20px;
+    }
+    
+    .pmi-section p, .tax-section p, .insurance-section p, .pmi-end-section p, .total-pmi-section p, .base-month-section p, .hoa-section p {
+        margin: 5px 0px;
+    }
+
+    .bottom-border {
+        width: 90%;
+        border-width: 0px 0px 1px 0px;
+        border-style: solid;
+        border-color: rgba(0, 0, 0, 0.2);
+        margin-top: 15px;
+    }
+
+    .chart {
+        width: 150px;
+    }
+    
+    .chart-container {
+        display: flex;
+        align-items: center;
+        margin: 0 auto 25px auto;
+        width: fit-content;
+    }
+    
+    .chart-details ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .chart-details ul li {
+        font-size: 20px;
+        margin: 12px 0px;
+    }
+    
+    .chart-details ul li .percentage {
+        font-weight: 700;
+    }
+
+    .chart-label {
+        font-size: 30px;
+    }
+
+    .amorization-btn {
+        background-color: white;
+        border-color: rgb(0, 109, 170);
+        color: rgb(0, 109, 170);
+        border-style: solid;
+        padding: 7px 10px;
+        border-radius: 4px;
+        border-width: 2px;
+        cursor: pointer;
+        transition: 0.3s ease;
+        font-size: 20px;
     }
 }
 
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 
 /* Portrait and Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) { 
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {   
+    .page-name-div {
+        margin-top: -20px;
+        background-color: rgba(4, 57, 98, 1);
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    .page-name-text {
+        color: white;
+        font-size: 60px;
+    }
+
+    .calculator-home {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        margin-top: 25px;
+        margin-bottom: 75px;
+    }
+
+    .calculator-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+    }
+
+    .input-div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 720px;
+        height: 50px;
+        margin: 15px 0px;
+
+    }
+    
+    .input-div input[type="number"] {
+        padding: 10px 0px 10px 10px;
+        height: 26px;
+        border-color: rgb(206, 212, 218);
+        border-style: solid;
+        font-size: 25px;
+    }
+
+    .money-group {
+        display: flex;
+        align-items: center;
+    }
+    
+    .money, .percent {
+        border-width: 1px 1px 1px 1px;
+        border-color: rgb(206, 212, 218);
+        border-style: solid;
+        padding: 9px 10px 10px 10px;
+        border-radius: 4px 0px 0px 4px;
+        background-color: rgb(233, 236, 239);
+        font-size: 25px;
+    }
+    
+    .down-money, .down-percent {
+        width: 200px;
+        border-radius: 0px 0px 0px 0px;
+        border-width: 1px 1px 1px 0px;
+    }
+    
+    .month-input {
+        width: 110px;
+        border-radius: 4px 0px 0px 4px;
+        border-width: 1px 1px 1px 1px;
+        padding: 10px 0px 10px 10px;
+        height: 50px;
+        border-color: rgb(206, 212, 218);
+        border-style: solid;
+    }
+    
+    .year {
+        width: 100px;
+        border-radius: 0px 0px 0px 0px;
+        border-width: 1px 1px 1px 1px;
+        padding: 2px 0px 2px 10px;
+        height: 25px;
+        border-color: rgb(206, 212, 218);
+        border-style: solid;
+    }
+    
+    .loan-term {
+        width: 210px;
+        border-radius: 4px 0px 0px 4px;
+        border-width: 1px 1px 1px 1px;
+    }
+    
+    .interest-rate {
+        width: 235px;
+        border-radius: 4px 0px 0px 4px;
+        border-width: 1px 1px 1px 1px;
+    }
+    
+    .property-tax {
+        width: 200px;
+        border-radius: 4px 0px 0px 4px;
+        border-width: 1px 1px 1px 1px;
+    }
+    
+    .pmi {
+        width: 235px;
+        border-radius: 4px 0px 0px 4px;
+        border-width: 1px 1px 1px 1px;
+    }
+    
+    .home-insurance {
+        width: 200px;
+        border-radius: 4px 0px 0px 4px;
+        border-width: 1px 1px 1px 1px;
+    }
+    
+    .percent {
+        border-width: 1px 1px 1px 0px;
+        padding: 9px 10px 10px 10px;
+        border-radius: 0px 4px 4px 0px;
+    }
+    
+    
+    .home-input, .loan-amount, .hoa {
+        border-color: rgb(206, 212, 218);
+        border-style: solid;
+        border-radius: 0px 4px 4px 0px;
+        border-width: 1px 1px 1px 0px;
+        width: 240px;
+    }
+
+    .range-slider {
+        width: 90%;
+        margin: 0.2em auto;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .calculator-graph {
+        width: 80%;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+    }
+
+    .amorization-schedule.active {
+        display: block;
+        box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        width: 600px;
+        margin: 50px auto;
+        padding: 10px 25px;
+    }
+
+    .amorization-schedule.active {
+        display: block;
+        box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        width: 800px;
+        margin: 50px auto;
+        padding: 10px 25px;
+    }
+
+    .amorization-title {
+        font-size: 30px;
+        margin: 5px 0px;
+    }
+
+    .amorization-text {
+        font-size: 20px;
+    }
+
+    .amorization-year-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 0.5;
+        font-size: 25px;
+    }
+    
+    .amorization-data-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex: 0.5;
+        font-size: 25px;
+    }
+
+    .monthly-display-number {
+        font-weight: bold;
+        font-size: 60px;
+        margin: 0px;
+    }
+    
+    .display-msg {
+        font-size: 25px;
+        width: 500px;
+    }
+    
+    .pmi-data, .pmi-end-data {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+    }
+    
+    .pmi-section, .tax-section, .insurance-section, .pmi-end-section, .total-pmi-section, .base-month-section, .hoa-section {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        font-size: 20px;
+    }
+    
+    .pmi-section p, .tax-section p, .insurance-section p, .pmi-end-section p, .total-pmi-section p, .base-month-section p, .hoa-section p {
+        margin: 5px 0px;
+    }
+
+    .bottom-border {
+        width: 90%;
+        border-width: 0px 0px 1px 0px;
+        border-style: solid;
+        border-color: rgba(0, 0, 0, 0.2);
+        margin-top: 15px;
+    }
+
+    .chart {
+        width: 150px;
+    }
+    
+    .chart-container {
+        display: flex;
+        align-items: center;
+        margin: 0 auto 25px auto;
+        width: fit-content;
+    }
+    
+    .chart-details ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .chart-details ul li {
+        font-size: 20px;
+        margin: 12px 0px;
+    }
+    
+    .chart-details ul li .percentage {
+        font-weight: 700;
+    }
+
+    .chart-label {
+        font-size: 30px;
+    }
+
+    .amorization-btn {
+        background-color: white;
+        border-color: rgb(0, 109, 170);
+        color: rgb(0, 109, 170);
+        border-style: solid;
+        padding: 7px 10px;
+        border-radius: 4px;
+        border-width: 2px;
+        cursor: pointer;
+        transition: 0.3s ease;
+        font-size: 20px;
+    }
 }
 
 /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
 
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px)and (-webkit-min-device-pixel-ratio: 2) {
+    .page-name-div {
+        margin-top: -20px;
+        background-color: rgba(4, 57, 98, 1);
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    .page-name-text {
+        color: white;
+        font-size: 60px;
+    }
+
+    .calculator-home {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        margin-top: 25px;
+        margin-bottom: 75px;
+    }
+
+    .calculator-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+    }
+
+    .input-div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 720px;
+        height: 50px;
+        margin: 15px 0px;
+
+    }
+    
+    .input-div input[type="number"] {
+        padding: 10px 0px 10px 10px;
+        height: 26px;
+        border-color: rgb(206, 212, 218);
+        border-style: solid;
+        font-size: 25px;
+    }
+
+    .money-group {
+        display: flex;
+        align-items: center;
+    }
+    
+    .money, .percent {
+        border-width: 1px 1px 1px 1px;
+        border-color: rgb(206, 212, 218);
+        border-style: solid;
+        padding: 9px 10px 10px 10px;
+        border-radius: 4px 0px 0px 4px;
+        background-color: rgb(233, 236, 239);
+        font-size: 25px;
+    }
+    
+    .down-money, .down-percent {
+        width: 200px;
+        border-radius: 0px 0px 0px 0px;
+        border-width: 1px 1px 1px 0px;
+    }
+    
+    .month-input {
+        width: 110px;
+        border-radius: 4px 0px 0px 4px;
+        border-width: 1px 1px 1px 1px;
+        padding: 10px 0px 10px 10px;
+        height: 50px;
+        border-color: rgb(206, 212, 218);
+        border-style: solid;
+    }
+    
+    .year {
+        width: 100px;
+        border-radius: 0px 0px 0px 0px;
+        border-width: 1px 1px 1px 1px;
+        padding: 2px 0px 2px 10px;
+        height: 25px;
+        border-color: rgb(206, 212, 218);
+        border-style: solid;
+    }
+    
+    .loan-term {
+        width: 210px;
+        border-radius: 4px 0px 0px 4px;
+        border-width: 1px 1px 1px 1px;
+    }
+    
+    .interest-rate {
+        width: 235px;
+        border-radius: 4px 0px 0px 4px;
+        border-width: 1px 1px 1px 1px;
+    }
+    
+    .property-tax {
+        width: 200px;
+        border-radius: 4px 0px 0px 4px;
+        border-width: 1px 1px 1px 1px;
+    }
+    
+    .pmi {
+        width: 235px;
+        border-radius: 4px 0px 0px 4px;
+        border-width: 1px 1px 1px 1px;
+    }
+    
+    .home-insurance {
+        width: 200px;
+        border-radius: 4px 0px 0px 4px;
+        border-width: 1px 1px 1px 1px;
+    }
+    
+    .percent {
+        border-width: 1px 1px 1px 0px;
+        padding: 9px 10px 10px 10px;
+        border-radius: 0px 4px 4px 0px;
+    }
+    
+    
+    .home-input, .loan-amount, .hoa {
+        border-color: rgb(206, 212, 218);
+        border-style: solid;
+        border-radius: 0px 4px 4px 0px;
+        border-width: 1px 1px 1px 0px;
+        width: 240px;
+    }
+
+    .range-slider {
+        width: 90%;
+        margin: 0.2em auto;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .calculator-graph {
+        width: 80%;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+    }
+
+    .amorization-schedule.active {
+        display: block;
+        box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        width: 600px;
+        margin: 50px auto;
+        padding: 10px 25px;
+    }
+
+    .amorization-schedule.active {
+        display: block;
+        box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        width: 800px;
+        margin: 50px auto;
+        padding: 10px 25px;
+    }
+
+    .amorization-title {
+        font-size: 30px;
+        margin: 5px 0px;
+    }
+
+    .amorization-text {
+        font-size: 20px;
+    }
+
+    .amorization-year-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 0.5;
+        font-size: 25px;
+    }
+    
+    .amorization-data-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex: 0.5;
+        font-size: 25px;
+    }
+
+    .monthly-display-number {
+        font-weight: bold;
+        font-size: 60px;
+        margin: 0px;
+    }
+    
+    .display-msg {
+        font-size: 25px;
+        width: 500px;
+    }
+    
+    .pmi-data, .pmi-end-data {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+    }
+    
+    .pmi-section, .tax-section, .insurance-section, .pmi-end-section, .total-pmi-section, .base-month-section, .hoa-section {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        font-size: 20px;
+    }
+    
+    .pmi-section p, .tax-section p, .insurance-section p, .pmi-end-section p, .total-pmi-section p, .base-month-section p, .hoa-section p {
+        margin: 5px 0px;
+    }
+
+    .bottom-border {
+        width: 90%;
+        border-width: 0px 0px 1px 0px;
+        border-style: solid;
+        border-color: rgba(0, 0, 0, 0.2);
+        margin-top: 15px;
+    }
+
+    .chart {
+        width: 150px;
+    }
+    
+    .chart-container {
+        display: flex;
+        align-items: center;
+        margin: 0 auto 25px auto;
+        width: fit-content;
+    }
+    
+    .chart-details ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .chart-details ul li {
+        font-size: 20px;
+        margin: 12px 0px;
+    }
+    
+    .chart-details ul li .percentage {
+        font-weight: 700;
+    }
+
+    .chart-label {
+        font-size: 30px;
+    }
+
+    .amorization-btn {
+        background-color: white;
+        border-color: rgb(0, 109, 170);
+        color: rgb(0, 109, 170);
+        border-style: solid;
+        padding: 7px 10px;
+        border-radius: 4px;
+        border-width: 2px;
+        cursor: pointer;
+        transition: 0.3s ease;
+        font-size: 20px;
+    }
 }
 
 /* ----------- iPhone 4 and 4S ----------- */
 
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px)and (-webkit-min-device-pixel-ratio: 2) {
+    .page-name-div {
+        margin-top: -20px;
+        background-color: rgba(4, 57, 98, 1);
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    .page-name-text {
+        color: white;
+        font-size: 60px;
+    }
+
+    .calculator-home {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        margin-top: 25px;
+        margin-bottom: 75px;
+    }
+
+    .calculator-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+    }
+
+    .input-div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 720px;
+        height: 50px;
+        margin: 15px 0px;
+
+    }
+    
+    .input-div input[type="number"] {
+        padding: 10px 0px 10px 10px;
+        height: 26px;
+        border-color: rgb(206, 212, 218);
+        border-style: solid;
+        font-size: 25px;
+    }
+
+    .money-group {
+        display: flex;
+        align-items: center;
+    }
+    
+    .money, .percent {
+        border-width: 1px 1px 1px 1px;
+        border-color: rgb(206, 212, 218);
+        border-style: solid;
+        padding: 9px 10px 10px 10px;
+        border-radius: 4px 0px 0px 4px;
+        background-color: rgb(233, 236, 239);
+        font-size: 25px;
+    }
+    
+    .down-money, .down-percent {
+        width: 200px;
+        border-radius: 0px 0px 0px 0px;
+        border-width: 1px 1px 1px 0px;
+    }
+    
+    .month-input {
+        width: 110px;
+        border-radius: 4px 0px 0px 4px;
+        border-width: 1px 1px 1px 1px;
+        padding: 10px 0px 10px 10px;
+        height: 50px;
+        border-color: rgb(206, 212, 218);
+        border-style: solid;
+    }
+    
+    .year {
+        width: 100px;
+        border-radius: 0px 0px 0px 0px;
+        border-width: 1px 1px 1px 1px;
+        padding: 2px 0px 2px 10px;
+        height: 25px;
+        border-color: rgb(206, 212, 218);
+        border-style: solid;
+    }
+    
+    .loan-term {
+        width: 210px;
+        border-radius: 4px 0px 0px 4px;
+        border-width: 1px 1px 1px 1px;
+    }
+    
+    .interest-rate {
+        width: 235px;
+        border-radius: 4px 0px 0px 4px;
+        border-width: 1px 1px 1px 1px;
+    }
+    
+    .property-tax {
+        width: 200px;
+        border-radius: 4px 0px 0px 4px;
+        border-width: 1px 1px 1px 1px;
+    }
+    
+    .pmi {
+        width: 235px;
+        border-radius: 4px 0px 0px 4px;
+        border-width: 1px 1px 1px 1px;
+    }
+    
+    .home-insurance {
+        width: 200px;
+        border-radius: 4px 0px 0px 4px;
+        border-width: 1px 1px 1px 1px;
+    }
+    
+    .percent {
+        border-width: 1px 1px 1px 0px;
+        padding: 9px 10px 10px 10px;
+        border-radius: 0px 4px 4px 0px;
+    }
+    
+    
+    .home-input, .loan-amount, .hoa {
+        border-color: rgb(206, 212, 218);
+        border-style: solid;
+        border-radius: 0px 4px 4px 0px;
+        border-width: 1px 1px 1px 0px;
+        width: 240px;
+    }
+
+    .range-slider {
+        width: 90%;
+        margin: 0.2em auto;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .calculator-graph {
+        width: 80%;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+    }
+
+    .amorization-schedule.active {
+        display: block;
+        box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        width: 600px;
+        margin: 50px auto;
+        padding: 10px 25px;
+    }
+
+    .amorization-schedule.active {
+        display: block;
+        box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        width: 800px;
+        margin: 50px auto;
+        padding: 10px 25px;
+    }
+
+    .amorization-title {
+        font-size: 30px;
+        margin: 5px 0px;
+    }
+
+    .amorization-text {
+        font-size: 20px;
+    }
+
+    .amorization-year-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 0.5;
+        font-size: 25px;
+    }
+    
+    .amorization-data-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex: 0.5;
+        font-size: 25px;
+    }
+
+    .monthly-display-number {
+        font-weight: bold;
+        font-size: 60px;
+        margin: 0px;
+    }
+    
+    .display-msg {
+        font-size: 25px;
+        width: 500px;
+    }
+    
+    .pmi-data, .pmi-end-data {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+    }
+    
+    .pmi-section, .tax-section, .insurance-section, .pmi-end-section, .total-pmi-section, .base-month-section, .hoa-section {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        font-size: 20px;
+    }
+    
+    .pmi-section p, .tax-section p, .insurance-section p, .pmi-end-section p, .total-pmi-section p, .base-month-section p, .hoa-section p {
+        margin: 5px 0px;
+    }
+
+    .bottom-border {
+        width: 90%;
+        border-width: 0px 0px 1px 0px;
+        border-style: solid;
+        border-color: rgba(0, 0, 0, 0.2);
+        margin-top: 15px;
+    }
+
+    .chart {
+        width: 150px;
+    }
+    
+    .chart-container {
+        display: flex;
+        align-items: center;
+        margin: 0 auto 25px auto;
+        width: fit-content;
+    }
+    
+    .chart-details ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .chart-details ul li {
+        font-size: 20px;
+        margin: 12px 0px;
+    }
+    
+    .chart-details ul li .percentage {
+        font-weight: 700;
+    }
+
+    .chart-label {
+        font-size: 30px;
+    }
+
+    .amorization-btn {
+        background-color: white;
+        border-color: rgb(0, 109, 170);
+        color: rgb(0, 109, 170);
+        border-style: solid;
+        padding: 7px 10px;
+        border-radius: 4px;
+        border-width: 2px;
+        cursor: pointer;
+        transition: 0.3s ease;
+        font-size: 20px;
+    }
 }
 
 

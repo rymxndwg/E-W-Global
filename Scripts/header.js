@@ -2,7 +2,6 @@ import {changeServiceName} from './service-handler.js';
 
 function openPage(pageUrl) {
     window.location.replace(pageUrl);
-    console.log(pageUrl);
 }
 
 function openSidebar() {
@@ -62,16 +61,16 @@ aboutUsLink.addEventListener("click", ()=> {
 
 servicesLink.addEventListener("click", ()=> {
     if (window.getComputedStyle(contentBlock, null).display == 'none') {
-        openPage('../services.html');
+        openPage('services.html');
     }
 });
 
 calculatorLink.addEventListener("click", ()=> {
-    openPage('../calculator.html');
+    openPage('calculator.html');
 });
 
 contactUsLink.addEventListener("click", ()=> {
-    openPage('../contact.html');
+    openPage('contact.html');
 });
 
 hamburgerImg.addEventListener("click", ()=> {

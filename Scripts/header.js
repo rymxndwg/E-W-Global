@@ -2,7 +2,7 @@ import {changeServiceName} from './service-handler.js';
 
 function openPage(pageUrl) {
     console.log("Called")
-    //window.location.replace(pageUrl);
+    window.location.replace(pageUrl);
 }
 
 function openSidebar() {
@@ -49,11 +49,11 @@ const headerWorkingLoan = document.querySelector('.js-header-working-loan');
 const headerEquipmentLoan = document.querySelector('.js-header-equipment-loan');
 
 homeLogo.addEventListener("click", ()=> {
-    openPage('../index.html');
+    openPage('index.html');
 });
 
 homeLink.addEventListener("click", ()=> {
-    openPage('../index.html');
+    openPage('index.html');
 });
 
 aboutUsLink.addEventListener("click", ()=> {

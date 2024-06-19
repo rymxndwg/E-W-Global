@@ -17,54 +17,57 @@
         <div class="header">
             <div class="left-header-sec">
                 <a class="header-link-logo" href="index.html">
-                    <img class="header-logo" src="Images/Logo.png" onclick="openPage('index.html')">
+                    <img class="header-logo" src="Images/Logo.png">
                 </a>
             </div>
 
             <div class="mid-header-sec">
                 <img class="hamburger-img" src="Icons/Hamburger.png" onclick="openSidebar()">
-                <div class="selector-line" onclick="openPage('index.html')">
+
+                <div class="selector-line js-home">
                     <a class="header-link" href="index.html">
                         <i class="fas fa-home"></i>
                         Home
                     </a>
                 </div>
-                <div class="selector-line" onclick="openPage('aboutus.html')">
+
+                <div class="selector-line js-aboutus">
                     <a class="header-link" href="aboutus.html">
                         <i class="fas fa-globe"></i>
                         About Us
                     </a>
                 </div>
-                <div class="home-selector-line selector-line" onclick="openPage('services.html')">
+                
+                <div class="home-selector-line selector-line js-services">
                     <div class="dropdown">
-                        <a class="header-link" href="services.html">
+                        <a class="header-link">
                             <i class="fas fa-lightbulb"></i>
                             Services
                         </a>
                         <div class="content">
-                            <a class="service-link" href="services-html/primary-property-loan.html">Primary Property Loans</a>
-                            <a class="service-link" href="services-html/investment-property.html">Investment Property Loans</a>
-                            <a class="service-link" href="services-html/commercial-property.html">Commercial Property Loans</a>
-                            <a class="service-link" href="services-html/hard-money.html">Hard Money, Bridge Loans</a>
-                            <a class="service-link" href="services-html/fix-flip.html">Fix Flip Loans</a>
-                            <a class="service-link" href="services-html/construction-loans.html">Construction Loans</a>
-                            <a class="service-link" href="services-html/foreign-loans.html">Foreign National Loans</a>
-                            <a class="service-link" href="services-html/land-loans.html">Land Loans</a>
-                            <a class="service-link" href="services-html/sba-loans.html">SBA Loans</a>
-                            <a class="service-link" href="services-html/working-capital.html">Working Capital Loans</a>
-                            <a class="service-link" href="services-html/equipment.html">Equipment Loans</a>
+                            <a class="service-link js-header-primary-property-loan">Primary Property Loans</a>
+                            <a class="service-link js-header-investment-property-loans">Investment Property Loans</a>
+                            <a class="service-link js-header-commerical-property-loan">Commercial Property Loans</a>
+                            <a class="service-link js-header-hard-money-loan">Hard Money, Bridge Loans</a>
+                            <a class="service-link js-header-fix-flip-loan">Fix Flip Loans</a>
+                            <a class="service-link js-header-construction-loan">Construction Loans</a>
+                            <a class="service-link js-header-foreign-loan">Foreign National Loans</a>
+                            <a class="service-link js-header-land-loan">Land Loans</a>
+                            <a class="service-link js-header-sba-loan">SBA Loans</a>
+                            <a class="service-link js-header-working-loan">Working Capital Loans</a>
+                            <a class="service-link js-header-equipment-loan">Equipment Loans</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="selector-line" onclick="openPage('calculator.html')">
+                <div class="selector-line js-calculator">
                     <a class="header-link" href="calculator.html">
                         <i class="fas fa-line-chart"></i>
                         Compare Rates
                     </a>
                 </div>
 
-                <div class="selector-line" onclick="openPage('contact.html')">
+                <div class="selector-line js-contact-us">
                     <a class="header-link" href="contact.html">
                         <i class="fas fa-envelope"></i>
                         Contact Us
@@ -80,11 +83,11 @@
             </div>
         </div>
 
-        <div class="menu-outside" onclick="closeSidebar()"></div>
+        <div class="menu-outside"></div>
 
         <div class="menu">
             <nav>
-                <div class="ham-x" onclick="closeSidebar()">
+                <div class="ham-x js-menu-x-btn">
                     <span></span>
                     <span></span>
                 </div>
@@ -137,7 +140,7 @@
         </div>
 
         <div class="services-grid">
-            <div class="service-container" onclick="openPage('services-html/primary-property-loan.html')">
+            <div class="service-container js-primary-property-loan">
                 <div class="service-bar"></div>
                 <div class="service-preview">
                     <img class="service-img" src="Images/house.jpeg">
@@ -145,7 +148,7 @@
                 </div>
             </div>
 
-            <div class="service-container" onclick="openPage('services-html/investment-property.html')">
+            <div class="service-container js-investment-property-loan">
                 <div class="service-bar"></div>
                 <div class="service-preview">
                     <img class="service-img" src="Images/investment.jpg">
@@ -153,7 +156,7 @@
                 </div>
             </div>
 
-            <div class="service-container" onclick="openPage('services-html/commercial-property.html')">
+            <div class="service-container js-commercial-property-loan">
                 <div class="service-bar"></div>
                 <div class="service-preview">
                     <img class="service-img" src="Images/Commercial.jpg">
@@ -161,7 +164,7 @@
                 </div>
             </div>
 
-            <div class="service-container" onclick="openPage('services-html/hard-money.html')">
+            <div class="service-container js-hard-money">
                 <div class="service-bar"></div>
                 <div class="service-preview">
                     <img class="service-img" src="Images/HardMoney.jpeg">
@@ -169,7 +172,7 @@
                 </div>
             </div>
 
-            <div class="service-container" onclick="openPage('services-html/fix-flip.html')">
+            <div class="service-container js-fix-flip">
                 <div class="service-bar"></div>
                 <div class="service-preview">
                     <img class="service-img" src="Images/fix-flip.jpeg">
@@ -177,7 +180,7 @@
                 </div>
             </div>
 
-            <div class="service-container" onclick="openPage('services-html/construction-loans.html')">
+            <div class="service-container js-construction-loan">
                 <div class="service-bar"></div>
                 <div class="service-preview">
                     <img class="service-img" src="Images/construction-img.jpeg">
@@ -185,7 +188,7 @@
                 </div>
             </div>
 
-            <div class="service-container" onclick="openPage('services-html/foreign-loans.html')">
+            <div class="service-container js-foreign-loan">
                 <div class="service-bar"></div>
                 <div class="service-preview">
                     <img class="service-img" src="Images/nation.jpeg">
@@ -193,7 +196,7 @@
                 </div>
             </div>
 
-            <div class="service-container" onclick="openPage('services-html/land-loans.html')">
+            <div class="service-container js-land-loan">
                 <div class="service-bar"></div>
                 <div class="service-preview">
                     <img class="service-img" src="Images/land.jpeg">
@@ -201,7 +204,7 @@
                 </div>
             </div>
 
-            <div class="service-container" onclick="openPage('services-html/sba-loans.html')">
+            <div class="service-container js-sba-loan">
                 <div class="service-bar"></div>
                 <div class="service-preview">
                     <img class="service-img" src="Images/sba.jpeg">
@@ -209,7 +212,7 @@
                 </div>
             </div>
 
-            <div class="service-container" onclick="openPage('services-html/working-capital.html')">
+            <div class="service-container js-working-loan">
                 <div class="service-bar"></div>
                 <div class="service-preview">
                     <img class="service-img" src="Images/capital.jpeg">
@@ -217,7 +220,7 @@
                 </div>
             </div>
 
-            <div class="service-container" onclick="openPage('services-html/equipment.html')">
+            <div class="service-container js-equipment-loan">
                 <div class="service-bar"></div>
                 <div class="service-preview">
                     <img class="service-img" src="Images/equipment.jpeg">
@@ -226,27 +229,7 @@
             </div>
         </div>
         
-        <script>
-            function openPage(pageUrl) {
-                window.location.replace(pageUrl);
-            }
-            
-            function openSidebar() {
-                const hamMenu = document.querySelector('.menu');
-                hamMenu.classList.toggle('active');
-
-                const hamMenuOutside = document.querySelector('.menu-outside');
-                hamMenuOutside.classList.toggle('active');
-            }
-
-            function closeSidebar() {
-                const hamMenu = document.querySelector('.menu');
-                hamMenu.classList.remove('active');
-
-                const hamMenuOutside = document.querySelector('.menu-outside');
-                hamMenuOutside.classList.remove('active');
-            }
-
-        </script>
+        <script type="module" src="Scripts/header.js"></script>
+        <script type="module" src="Scripts/services.js"></script>
     </body>
 </html>

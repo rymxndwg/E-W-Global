@@ -7,9 +7,9 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" href="Styles/header.css">
-        <link rel="stylesheet" href="Styles/general.css">
-        <link rel="stylesheet" href="Styles/index.css">
+        <link rel="stylesheet" href="../Styles/header.css">
+        <link rel="stylesheet" href="../Styles/general.css">
+        <link rel="stylesheet" href="../Styles/services-template.css">
 
         <script src="https://kit.fontawesome.com/da85db3896.js" crossorigin="anonymous"></script>
     </head>
@@ -24,7 +24,7 @@
             <div class="mid-header-sec">
                 <img class="hamburger-img" src="Icons/Hamburger.png" onclick="openSidebar()">
 
-                <div class="home-selector-line selector-line js-home">
+                <div class="selector-line js-home">
                     <a class="header-link" href="index.html">
                         <i class="fas fa-home"></i>
                         Home
@@ -38,7 +38,7 @@
                     </a>
                 </div>
                 
-                <div class="selector-line js-services">
+                <div class="home-selector-line selector-line js-services">
                     <div class="dropdown">
                         <a class="header-link">
                             <i class="fas fa-lightbulb"></i>
@@ -133,22 +133,45 @@
             </div>
         </div>
 
-        <div class="hero-div">
-            <div class="welcome-div">
-                <div class="welcome-info">
-                    <p class="welcome-title">Your Perfect Mortgage, Simplified</p>
-                    <p class="welcome-text">Tailored solutions for every client, every situation!</p>
-                    <a href="contact.html">
-                        <button class="welcome-btn">
-                            Contact Us
-                        </button>
-                    </a>
-                    
+        <div class="loan-name-div">
+            <div class="div-padding"></div>
+            <p class="loan-name-text"></p>
+            <div class="div-padding"></div>
+        </div>
+
+        <div class="content-div">
+            <div class="hero-div">
+                <div class="left-hero-side">
+                    <div class="img-div"></div>
+                </div>
+                <div class="right-hero-side">
+                    <p class="our-services-title">Our Services</p>
+                    <p class="our-services-text">
+                        Our Services Text
+                    </p>
                 </div>
             </div>
-            <div class="welcome-image"></div>
+    
+            <div class="why-us-div">
+                <p class="why-us-title">Why Us</p>
+                <p class="why-us-text js-why-us-text-1">
+                </p>
+                <p class="why-us-text js-why-us-text-2">
+                </p>
+                <p class="why-us-text js-why-us-text-3">
+                </p>
+            </div>
+            
+            <div class="contact-div">
+                <a href="../contact.html">
+                    <button class="welcome-btn">
+                        Get Consultation
+                    </button>
+                </a>
+            </div>
         </div>
 
         <script type="module" src="Scripts/header.js"></script>
+        <script type="module" src="Scripts/service-template.js"></script>
     </body>
 </html>

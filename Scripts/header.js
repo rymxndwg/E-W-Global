@@ -1,8 +1,8 @@
 import {changeServiceName} from './service-handler.js';
 
 function openPage(pageUrl) {
-    console.log("Called")
     window.location.replace(pageUrl);
+    console.log(pageUrl);
 }
 
 function openSidebar() {
@@ -57,7 +57,7 @@ homeLink.addEventListener("click", ()=> {
 });
 
 aboutUsLink.addEventListener("click", ()=> {
-    openPage('../aboutus.html');
+    openPage('aboutus.html');
 });
 
 servicesLink.addEventListener("click", ()=> {

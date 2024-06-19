@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>E.W Global</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="Styles/header.css">
+        <link rel="stylesheet" href="Styles/general.css">
+        <link rel="stylesheet" href="Styles/calculator.css">
+
+        <script src="https://kit.fontawesome.com/da85db3896.js" crossorigin="anonymous"></script>
+    </head>
+    <body>        
+        <div class="header">
+            <div class="left-header-sec">
+                <a class="header-link-logo" href="index.html">
+                    <img class="header-logo" src="Images/Logo.png">
+                </a>
+            </div>
+
+            <div class="mid-header-sec">
+                <img class="hamburger-img" src="Icons/Hamburger.png" onclick="openSidebar()">
+
+                <div class="selector-line js-home">
+                    <a class="header-link" href="index.html">
+                        <i class="fas fa-home"></i>
+                        Home
+                    </a>
+                </div>
+
+                <div class="selector-line js-aboutus">
+                    <a class="header-link" href="aboutus.html">
+                        <i class="fas fa-globe"></i>
+                        About Us
+                    </a>
+                </div>
+                
+                <div class="selector-line js-services">
+                    <div class="dropdown">
+                        <a class="header-link">
+                            <i class="fas fa-lightbulb"></i>
+                            Services
+                        </a>
+                        <div class="content">
+                            <a class="service-link js-header-primary-property-loan">Primary Property Loans</a>
+                            <a class="service-link js-header-investment-property-loans">Investment Property Loans</a>
+                            <a class="service-link js-header-commerical-property-loan">Commercial Property Loans</a>
+                            <a class="service-link js-header-hard-money-loan">Hard Money, Bridge Loans</a>
+                            <a class="service-link js-header-fix-flip-loan">Fix Flip Loans</a>
+                            <a class="service-link js-header-construction-loan">Construction Loans</a>
+                            <a class="service-link js-header-foreign-loan">Foreign National Loans</a>
+                            <a class="service-link js-header-land-loan">Land Loans</a>
+                            <a class="service-link js-header-sba-loan">SBA Loans</a>
+                            <a class="service-link js-header-working-loan">Working Capital Loans</a>
+                            <a class="service-link js-header-equipment-loan">Equipment Loans</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="home-selector-line selector-line js-calculator">
+                    <a class="header-link" href="calculator.html">
+                        <i class="fas fa-line-chart"></i>
+                        Compare Rates
+                    </a>
+                </div>
+
+                <div class="selector-line js-contact-us">
+                    <a class="header-link" href="contact.html">
+                        <i class="fas fa-envelope"></i>
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+
+            <div class="right-header-sec">
+                <a class="header-number">
+                    <i class="fas fa-phone"></i>
+                    929-988-1689
+                </a>
+            </div>
+        </div>
+
+        <div class="menu-outside"></div>
+
+        <div class="menu">
+            <nav>
+                <div class="ham-x js-menu-x-btn">
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+
+            <div class="phone-number-div">
+                <div class="phone-number">
+                    <i class="fas fa-phone"></i>
+                    929-988-1689
+                </div>
+            </div>
+
+            <div class="menu-selector-div">
+                <a class="menu-link" href="index.html">
+                    <i class="fas fa-home"></i>
+                    Home
+                </a>
+            </div>
+            <div class="menu-selector-div">
+                <a class="menu-link" href="aboutus.html">
+                    <i class="fas fa-globe"></i>
+                    About Us
+                </a>
+            </div>
+            <div class="menu-selector-div">
+                <a class="menu-link" href="services.html">
+                    <i class="fas fa-lightbulb"></i>
+                    Services
+                </a>
+            </div>
+
+            <div class="menu-selector-div">
+                <a class="menu-link" href="calculator.html">
+                    <i class="fas fa-line-chart"></i>
+                    Compare Rates
+                </a>
+            </div>
+            <div class="menu-selector-div">
+                <a class="menu-link" href="contact.html">
+                    <i class="fas fa-envelope"></i>
+                    Contact Us
+                </a>
+            </div>
+        </div>
+
+        <div class="page-name-div">
+            <div class="div-padding"></div>
+            <p class="page-name-text">Get Current Rates</p>
+            <div class="div-padding"></div>
+        </div>
+        
+        <div class="calculator-home">
+            <div class="calculator-form">
+                <div class="input-div">
+                    <p>Home Value: </p>
+                    <div class="money-group">
+                        <p class="money">$</p>
+                        <input class="home-input" type="number" value="300000">
+                    </div>
+                </div>
+
+                <div class="input-div">
+                    <p>Down Payment: </p>
+                    <div class="money-group">
+                        <p class="money">$</p>
+                        <input class="down-money" type="number" value="50000">
+                        <input class="down-percent" type="number" value="16.67">
+                        <p class="percent">%</p>
+                    </div>
+                </div>
+
+                <div class="range-slider">
+                    <input class="down-payment-slider slider" type="range" min="0" max="100" value="50">
+                    <div class="down-payment-slider-thumb slider-thumb"></div>
+                    <div class="down-payment-progress progress"></div>
+                </div>
+
+                <div class="input-div">
+                    <p>Loan Amount: </p>
+                    <div class="money-group">
+                        <p class="money">$</p>
+                        <input class="loan-amount" type="number" value="250000">
+                    </div>
+                </div>
+
+                <div class="input-div">
+                    <p>Interest Rate: </p>
+                    <div class="money-group">
+                        <input class="interest-rate" type="number" value="4">
+                        <p class="percent">%</p>
+                    </div>
+                </div>
+
+                <div class="range-slider">
+                    <input class="interest-slider slider" type="range" min="0" max="100" value="50">
+                    <div class="interest-slider-thumb slider-thumb"></div>
+                    <div class="interest-progress progress"></div>
+                </div>
+
+                <div class="input-div">
+                    <p>Loan Term: </p>
+                    <div class="money-group">
+                        <input class="loan-term" type="number" value="30">
+                        <p class="percent">years</p>
+                    </div>
+                </div>
+
+                <div class="input-div">
+                    <p>Start Date: </p>
+                    <div class="money-group">
+                        <select class="month-input" list="months" name="Month" value="4">
+                                <option value="0">January</option>
+                                <option value="1">February</option>
+                                <option value="2">March</option>
+                                <option value="3">April</option>
+                                <option value="4">May</option>
+                                <option value="5">June</option>
+                                <option value="6">July</option>
+                                <option value="7">August</option>
+                                <option value="8">September</option>
+                                <option value="9">October</option>
+                                <option value="10">November</option>
+                                <option value="11">December</option>
+                            </select>
+                        <input class="year" type="number" value="2024">
+                        <p class="percent">years</p>
+                    </div>
+                </div>
+
+                <div class="input-div">
+                    <p>Property Tax: </p>
+                    <div class="money-group">
+                        <input class="property-tax" type="number" value="2400">
+                        <p class="percent">$/year</p>
+                    </div>
+                </div>
+
+                <div class="input-div">
+                    <p>PMI: </p>
+                    <div class="money-group">
+                        <input class="pmi" type="number" value="1">
+                        <p class="percent">%</p>
+                    </div>
+                </div>
+
+                <div class="range-slider">
+                    <input class="pmi-slider slider" type="range" min="0" max="100" value="50">
+                    <div class="pmi-slider-thumb slider-thumb"></div>
+                    <div class="pmi-progress progress"></div>
+                </div>
+
+                <div class="input-div">
+                    <p>Home Insurance: </p>
+                    <div class="money-group">
+                        <input class="home-insurance" type="number" value="1000">
+                        <p class="percent">$/year</p>
+                    </div>
+                </div>
+
+                <div class="input-div">
+                    <p>Monthly HOA: </p>
+                    <div class="money-group">
+                        <p class="money">$</p>
+                        <input class="hoa" type="number" value="0">
+                    </div>
+                </div>
+            </div>
+
+            <div class="calculator-graph">
+                <div class="monthly-display">
+                    <p class="monthly-display-number">$200</p>
+                    <p class="display-msg">Your estimated monthly payment <span class="with-pmi-msg">with PMI</span></p>
+                </div>
+
+                <div class="pmi-data">
+                    <div class="pmi-section">
+                        <p class="pmi-name">PMI: </p>
+                        <p class="pmi-number">$200</p>
+                    </div>
+                    <div class="tax-section">
+                        <p class="tax-name">Monthly Tax Paid: </p>
+                        <p class="tax-number">$200</p>
+                    </div>
+                    <div class="insurance-section">
+                        <p class="insurance-name">Monthly Insurance Paid: </p>
+                        <p class="insurance-number">$200</p>
+                    </div>
+                    <div class="hoa-section">
+                        <p class="hoa-name">Monthly HOA Fees: </p>
+                        <p class="hoa-number">$200</p>
+                    </div>
+
+                    <div class="bottom-border"></div>
+                </div>
+
+                <div class="pmi-end-data">
+                    <div class="pmi-end-section">
+                        <p class="pmi-end-name">PMI End Date: </p>
+                        <p class="pmi-end-number">Aug, 2026</p>
+                    </div>
+                    <div class="total-pmi-section">
+                        <p class="total-pmi-name">Total PMI Payments: </p>
+                        <p class="total-pmi-number">26</p>
+                    </div>
+                    <div class="base-month-section">
+                        <p class="base-month-name">Monthly Payment after Aug, 2026: </p>
+                        <p class="base-month-number">$1476.87</p>
+                    </div>
+                    <div class="bottom-border"></div>
+                </div>
+
+                <div class="chart-section">
+                    <p class="chart-label">Insurance Breakdown</p>
+
+                    <div class="chart-container">
+                        <div class="chart">
+                            <canvas class="my-chart">
+    
+                            </canvas>
+                        </div>
+    
+                        <div class="chart-details">
+                            <ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="amorization-section">
+                    <button class="amorization-btn" onclick="openAmorizationTable()">Show Amorization Schedule</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="amorization-schedule">
+            <p class="amorization-title">Yearly Amorization Schedule</p>
+
+            <div class="amorization-container">
+                <div class="amorization-year-container">
+                    <p class="amorization-column-title">Year</p>
+                </div>
+
+                <div class="amorization-data-container">
+                    <div class="amorization-interest-container">
+                        <p class="amorization-column-title">Interest</p>
+                    </div>
+
+                    <div class="amorization-principal-container">
+                        <p class="amorization-column-title">Principal</p>
+                    </div>
+
+                    <div class="amorization-balance-container">
+                        <p class="amorization-column-title">Balance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="module" src="Scripts/header.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script>
+            function sliderSetUp(name) {
+                const thumb = document.querySelector(`.${name}-slider-thumb`);
+                const slider = document.querySelector(`.${name}-slider`);
+                const progress = document.querySelector(`.${name}-progress`);
+
+                function customSlider() {
+                    const maxVal = slider.getAttribute("max");
+                    const val = (slider.value / maxVal) * 100 + "%";
+
+                    progress.style.width = val;
+                    thumb.style.left = val;
+                }
+                
+                slider.addEventListener("input", ()=> {
+                    customSlider();
+                })
+            }
+
+            sliderSetUp("down-payment");
+            sliderSetUp("interest");
+            sliderSetUp("pmi");
+
+            const chartData = {
+                labels: ["DownPayment", "Principal", "Interest", "Taxes", "HOA-Insurance"],
+                data: [30, 30, 20, 10, 10],
+            };
+
+            const myChart = document.querySelector(".my-chart");
+
+            let curChart = new Chart(myChart, {
+                type: "doughnut",
+                data: {
+                    labels: chartData.labels,
+                    datasets: [
+                        {
+                            label: "Payment Breakdown",
+                            data: chartData.data,
+                            backgroundColor: ['rgb(0, 53, 89)', 'rgb(0, 109, 170)', 'rgb(3, 83, 164)', 'rgb(6, 26, 64)', 'rgb(185, 214, 242)'],
+                        }
+                    ],
+                },
+                options: {
+                    borderWidth: 10,
+                    borderRadius: 2,
+                    hoverBorderWidth: 0,
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    }
+                },
+            });
+
+            const ul = document.querySelector(".chart-container .chart-details ul");
+
+            const populateUl = () => {
+                chartData.labels.forEach((l, i) => {
+                    let li = document.createElement("li");
+                    li.innerHTML = `<span class="${l}-block">hii</span>  ${l}: <span class="percentage">${chartData.data[i]}%</span>`;
+                    ul.append(li);
+                });
+            };
+
+            populateUl();
+
+            monthsToStr = {
+                0: 'Jan',
+                1: 'Feb',
+                2: 'Mar',
+                3: 'Apr',
+                4: 'May',
+                5: 'June',
+                6: 'July',
+                7: 'Aug',
+                8: 'Sep',
+                9: 'Oct',
+                10: 'Nov',
+                11: 'Dec',
+            }
+
+            //Initial Setup
+            let currentDate = new Date();
+            let curNumMonth = currentDate.getMonth()
+            let currentYr = currentDate.getFullYear();
+
+            //Get Input Elements
+            let homeInputElement = document.querySelector(".home-input");
+
+            let downMoneyElement = document.querySelector(".down-money");
+            let downPercentElement = document.querySelector(".down-percent"); 
+
+            let downMoneySliderElement = document.querySelector(".down-payment-slider")
+            let downMoneyThumbElement = document.querySelector(".down-payment-slider-thumb");
+            let downMoneyProgressElement = document.querySelector(".down-payment-progress");
+
+            let loanInputElement = document.querySelector(".loan-amount");
+            
+            let interestInputElement = document.querySelector(".interest-rate");
+
+            let interestSliderElement = document.querySelector(".interest-slider");
+            let interestThumbElement = document.querySelector(".interest-slider-thumb");
+            let interestProgressElement = document.querySelector(".interest-progress");
+
+            let loanTermElement = document.querySelector(".loan-term");
+
+            let monthInput =  document.querySelector(".month-input");
+
+            let yearInput = document.querySelector(".year");
+
+            let propertyTaxElement = document.querySelector(".property-tax");
+
+            let pmiElement = document.querySelector(".pmi");
+
+            let pmiSliderElement = document.querySelector(".pmi-slider");
+            let pmiThumbElement = document.querySelector(".pmi-slider-thumb");
+            let pmiProgressElement = document.querySelector(".pmi-progress");
+
+            let homeInsuranceElement = document.querySelector(".home-insurance");
+
+            let hoaElement = document.querySelector(".hoa");
+
+            monthInput.value = curNumMonth;
+            yearInput.value = currentYr;
+
+            downMoneySliderElement.max = homeInputElement.value;
+            updateDownMoneySlider();
+            updateDownPercent();
+
+            updateLoanAmount();
+            
+            interestSliderElement.max = 3000;
+            updateInterestSlider();
+
+            pmiSliderElement.max = 1000;
+            updatePMISlider();
+
+            function calculateData() {
+                curNumMonth = parseInt(monthInput.value);
+                currentYr = parseInt(yearInput.value);
+
+                let interestRate = interestInputElement.value / 1200;
+                let principal =  parseFloat(homeInputElement.value - downMoneyElement.value);
+                let n = loanTermElement.value * 12;
+                let homePrice = homeInputElement.value;
+                let baseMonthPayment = 0;
+                if (interestInputElement.value > 0) {                    
+                    let topPayment = Math.pow(1 + interestRate, n) * interestRate;
+                    let botPayment = Math.pow(1 + interestRate, n) -1;
+                    baseMonthPayment = principal * (topPayment/botPayment);
+                } else {
+                    baseMonthPayment = principal / n;
+                }
+
+                let pmiPayment = (principal * (pmiElement.value / 100)) / 12;
+
+                let hoaFee = parseInt(hoaElement.value);
+                if (!hoaElement.value) {
+                    hoaFee  = 0;
+                }
+
+                let insuranceFee = homeInsuranceElement.value / 12;
+                let taxFee = propertyTaxElement.value / 12;
+                
+                let totalMonthPayment;
+                if (homePrice == 0) {
+                    totalMonthPayment = 0;
+                    taxFee = 0;
+                    insuranceFee = 0;
+                } else {
+                    totalMonthPayment = baseMonthPayment + pmiPayment + hoaFee + insuranceFee + taxFee;
+                }
+
+                let pmiPayOffDate = '';
+                let nPayments = 0;
+                let amortizationSchedule = [];
+                let curInterestPayment;
+                let curPrincipalPayment;
+                let remainingBalance = principal;
+                let pmiCuttOff = homePrice * 0.8;
+                let foundPMI = false;
+
+                let cumulatedInterest = 0;
+                let cumulatedPrincipal = 0;
+                let cumulatedTaxes = 0;
+                let cumulatedHoaInsurance = 0;
+
+                let yearlyInterest = 0;
+                let yearlyPrincipal = 0;
+                
+
+                for (let i=1; i < n + 1; i++) {                
+                    curInterestPayment = remainingBalance * interestRate;
+                    curPrincipalPayment = baseMonthPayment - curInterestPayment;
+                    remainingBalance -= curPrincipalPayment
+
+                    cumulatedInterest += curInterestPayment;
+                    cumulatedPrincipal += curPrincipalPayment;
+                    cumulatedTaxes += taxFee;
+                    cumulatedHoaInsurance += (insuranceFee + hoaFee);
+
+                    yearlyInterest += curInterestPayment;
+                    yearlyPrincipal += curPrincipalPayment;
+
+                    if (!foundPMI) {
+                        if (pmiCuttOff >= remainingBalance) {
+                            pmiPayOffDate = `${monthsToStr[curNumMonth]}, ${currentYr}`;
+                            foundPMI = true;
+                        }
+                        else {
+                            nPayments += 1;
+                        }
+                    }
+
+                    curNumMonth = curNumMonth + 1;
+                    if (curNumMonth > 11) {
+                        amortizationSchedule.push([currentYr, Number(yearlyInterest).toFixed(2), Number(yearlyPrincipal).toFixed(2), Math.round(remainingBalance)]);
+                        yearlyInterest = 0;
+                        yearlyPrincipal = 0;
+
+                        curNumMonth = 0;
+                        currentYr += 1;
+                    }
+
+                    if (Math.round(remainingBalance) <= 0) {
+                        amortizationSchedule.push([currentYr, Number(yearlyInterest).toFixed(2), Number(yearlyPrincipal).toFixed(2), Math.round(remainingBalance)]);
+                    }
+                }
+
+                const monthlyTitleDisplay = document.querySelector(".monthly-display-number");
+                const pmiSection = document.querySelector(".pmi-section");
+                const pmiDataSection = document.querySelector(".pmi-end-data");
+                const pmiDisplay = document.querySelector(".pmi-number");
+                const taxDisplay = document.querySelector(".tax-number");
+                const insuranceDisplay = document.querySelector(".insurance-number");
+                const pmiEndDateDisplay = document.querySelector(".pmi-end-number");
+                const pmiPaymentNumberDisplay = document.querySelector(".total-pmi-number");
+                const pmiBaseMonthName = document.querySelector(".base-month-name");
+                const baseMonthDisplay = document.querySelector(".base-month-number");
+                const insuranceSection = document.querySelector(".insurance-section");
+                const hoaSection = document.querySelector(".hoa-section");
+                const hoaName = document.querySelector(".hoa-name");
+                const hoaNumber = document.querySelector(".hoa-number")
+
+                monthlyTitleDisplay.innerHTML = convertNumber(totalMonthPayment);
+                pmiDisplay.innerHTML = convertNumber(pmiPayment);
+                taxDisplay.innerHTML = convertNumber(taxFee);
+                insuranceDisplay.innerHTML = convertNumber(insuranceFee);
+                pmiEndDateDisplay.innerHTML = pmiPayOffDate;
+                pmiPaymentNumberDisplay.innerHTML = nPayments;
+                pmiBaseMonthName.innerHTML = `Monthly Payment after ${pmiPayOffDate}:`;
+                baseMonthDisplay.innerHTML = convertNumber(totalMonthPayment - pmiPayment);
+
+                if (hoaFee > 0) {
+                    if (!hoaSection.classList.contains('active')) {
+                        hoaSection.classList.toggle('active');
+                    }
+                    hoaNumber.innerHTML = hoaFee;
+                } else {
+                    hoaSection.classList.remove('active');
+                }
+
+                if (parseInt(insuranceFee) > 0) {
+                    if (!insuranceSection.classList.contains('active')) {
+                        insuranceSection.classList.toggle('active');
+                    }
+                } else {
+                    insuranceSection.classList.remove('active');
+                }
+
+                if (parseFloat(pmiElement.value / 100) > 0) {
+                    if (!pmiSection.classList.contains('active')) {
+                        pmiSection.classList.toggle('active');
+                        pmiDataSection.classList.toggle('active');
+                    }
+                } else {
+                    pmiSection.classList.remove('active');
+                    pmiDataSection.classList.remove('active');
+                }
+
+                let totalPrice = cumulatedInterest + cumulatedPrincipal + cumulatedTaxes + cumulatedHoaInsurance + downMoneyElement.value;
+
+                function getRatio(curNum) {
+                    return ((parseFloat(curNum)/parseFloat(totalPrice)) * 100).toFixed(2);
+                }
+
+                let newData;
+                if (homePrice == 0) {
+                    newData = [0, 0, 0, 0, 0]
+                } else {
+                    newData = [getRatio(downMoneyElement.value), getRatio(cumulatedPrincipal), getRatio(cumulatedInterest), getRatio(cumulatedTaxes), getRatio(cumulatedHoaInsurance)];
+                }
+
+                chartData.data = newData;
+
+                curChart.data.datasets[0].data = newData;
+
+                curChart.update();
+
+                ul.innerHTML = '';
+                populateUl();
+
+                let yearAmorizationContainer = document.querySelector('.amorization-year-container');
+                let interestAmorizationContainer = document.querySelector('.amorization-interest-container');
+                let principalAmorizationContainer = document.querySelector('.amorization-principal-container');
+                let balanceAmorizationContainer = document.querySelector('.amorization-balance-container');
+
+                let yearAmorizationHTML = '<p class="amorization-column-title">Year</p>';
+                let interestAmorizationHTML = '<p class="amorization-column-title">Interest</p>';
+                let principalAmorizationHTML = '<p class="amorization-column-title">Principal</p>';
+                let balanceAmorizationHTML = '<p class="amorization-column-title">Balance</p>';
+
+                amortizationSchedule.forEach((yearData) => {
+                    yearAmorizationHTML += `<p class="amorization-text">${yearData[0]}</p>`;
+                    interestAmorizationHTML += `<p class="amorization-text">${yearData[1]}</p>`;
+                    principalAmorizationHTML += `<p class="amorization-text">${yearData[2]}</p>`;
+                    balanceAmorizationHTML += `<p class="amorization-text">${yearData[3]}</p>`;
+                });
+
+                yearAmorizationContainer.innerHTML = yearAmorizationHTML;
+                interestAmorizationContainer.innerHTML = interestAmorizationHTML;
+                principalAmorizationContainer.innerHTML = principalAmorizationHTML;
+                balanceAmorizationContainer.innerHTML = balanceAmorizationHTML;
+            }
+
+            function convertNumber(curNum) {
+                let newVal = Number(curNum).toFixed(2);
+                return `$${newVal}`
+            }
+
+            function openAmorizationTable() {
+                let container = document.querySelector(".amorization-schedule");
+                if (container.classList.contains('active')) {
+                    container.classList.remove('active');
+                } else {
+                    container.classList.toggle('active');
+                }
+
+                calculateData();
+            }
+
+            calculateData();
+
+            function recalculateDownMoney() {
+                downMoneyElement.value = ((downPercentElement.value/100) * homeInputElement.value).toFixed(2);
+            }
+
+            function updateDownMoney() {
+                downMoneyElement.value = homeInputElement.value - loanInputElement.value;
+            }
+
+            function updateDownPercent() {
+                downPercentElement.value = ((downMoneyElement.value / homeInputElement.value) * 100).toFixed(2);
+            }
+
+            function updateDownMoneySlider() {
+                downMoneySliderElement.max = homeInputElement.value;
+                
+                downMoneySliderElement.value = downMoneyElement.value;
+
+                const maxVal = downMoneySliderElement.getAttribute("max");
+                const val = (downMoneySliderElement.value / maxVal) * 100 + "%";
+
+                downMoneyProgressElement.style.width = val;
+                downMoneyThumbElement.style.left = val;
+            }
+
+            function updateLoanAmount() {
+                loanInputElement.value = homeInputElement.value - downMoneyElement.value;
+            }
+
+            function updateInterestSlider() {
+                interestSliderElement.max = 3000;
+                
+                interestSliderElement.value = interestInputElement.value * 100;
+
+                const maxVal = interestSliderElement.getAttribute("max");
+                const val = (interestSliderElement.value / maxVal) * 100 + "%";
+
+                interestProgressElement.style.width = val;
+                interestThumbElement.style.left = val;
+            }
+
+            function updatePMISlider() {
+                pmiSliderElement.max = 1000;
+                
+                pmiSliderElement.value = pmiElement.value * 100;
+
+                const maxVal = pmiSliderElement.getAttribute("max");
+                const val = (pmiSliderElement.value / maxVal) * 100 + "%";
+
+                pmiProgressElement.style.width = val;
+                pmiThumbElement.style.left = val;
+            }
+
+            homeInputElement.addEventListener("input", ()=> {
+                downMoneySliderElement.max = homeInputElement.value;
+                recalculateDownMoney();
+                updateDownMoneySlider();
+                calculateData();
+            });
+
+            downMoneyElement.addEventListener("input", ()=> {
+                if (downMoneyElement.value > parseFloat(homeInputElement.value)) {
+                    downMoneyElement.value = homeInputElement.value;
+                }
+                updateDownPercent();
+                updateDownMoneySlider();
+                updateLoanAmount();
+                calculateData();
+            });
+
+            downMoneySliderElement.addEventListener("input", ()=> {
+                downMoneyElement.value = downMoneySliderElement.value;
+                updateDownPercent();
+                updateLoanAmount();
+                calculateData();
+            });
+
+            downPercentElement.addEventListener("input", ()=> {
+                if (downPercentElement.value > 100) {
+                    downPercentElement.value = 100;
+                } 
+                downMoneyElement.value = (downPercentElement.value/100) * homeInputElement.value;
+                updateDownMoneySlider();
+                calculateData();
+            });
+
+            loanInputElement.addEventListener("input", ()=> {
+                if (loanInputElement.value > parseFloat(homeInputElement.value)) {
+                    loanInputElement.value = homeInputElement.value;
+                }
+                updateDownMoney();
+                calculateData();
+            });
+
+            interestInputElement.addEventListener("input", ()=> {
+                if (interestInputElement.value > 30) {
+                    interestInputElement.value = 30;
+                }
+                updateInterestSlider();
+                calculateData();
+            });
+
+            interestSliderElement.addEventListener("input", ()=> {
+                interestInputElement.value = interestSliderElement.value/100;
+                calculateData();
+            });
+
+            loanTermElement.addEventListener("input", ()=> {
+                calculateData();
+            });
+
+            monthInput.addEventListener("input", ()=> {
+                console.log(monthInput.value);
+                calculateData();
+            });
+
+            yearInput.addEventListener("input", ()=> {
+                calculateData();
+            });
+
+            propertyTaxElement.addEventListener("input", ()=> {
+                calculateData();
+            });
+
+            pmiElement.addEventListener("input", ()=> {
+                updatePMISlider();
+                calculateData();
+            });
+
+            pmiSliderElement.addEventListener("input", ()=> {
+                pmiElement.value = pmiSliderElement.value/100;
+                calculateData();
+            });
+
+            homeInsuranceElement.addEventListener("input", ()=> {
+                calculateData();
+            });
+
+            hoaElement.addEventListener("input", ()=> {
+                calculateData();
+            });
+
+
+        </script>
+    </body>
+</html>

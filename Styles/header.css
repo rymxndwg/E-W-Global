@@ -1,0 +1,910 @@
+.header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    border-width: 0px 0px 2px 0px;
+    border-style: solid;
+    border-color: #07568D;
+    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
+    height: 150px;
+    z-index: 100;
+}
+
+.left-header-sec {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    width: 200px;
+}
+
+.header-logo {
+    margin-left: auto;
+    margin-top: -10px;
+    height: 80px;
+    cursor: pointer;
+}
+
+.mid-header-sec {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding-left: 0px;
+    padding-right: 0px;
+    min-height: 100px;
+    max-width: 1400px;
+    transition: 0.3s ease;
+}
+
+.header-link {
+    font-size: 20px;
+    color: #07568D;
+}
+
+.selector-line {
+    border-width: 5px 0px 0px 0px;
+    border-style: solid;
+    border-color: white;
+    padding: 5px;
+    transition: border-color 0.5s;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.selector-line:hover, .home-selector-line {
+    border-color: #07568D;
+    cursor: pointer;
+}
+
+.right-header-sec {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.header-number {
+    font-size:  20px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #07568D;
+    padding: 15px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.header-number:hover {
+    background-color: #07568D;
+    color: white;
+    cursor: pointer;
+}
+
+.dropdown a {
+    display: block;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.dropdown .content {
+    display: none;
+    position: absolute;
+    background-color: hsl(0, 0%, 95%);
+    min-width: 100px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+}
+
+.dropdown:hover .content {
+    display: block;
+}
+
+.service-link {
+    color: black
+}
+
+.dropdown .service-link:hover {
+    background-color: hsl(0, 0%, 90%);
+}
+
+.hamburger-img {
+    display: none;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 150;
+}
+
+.menu {
+    background-color: #191919;
+    height: 100vh;
+    width: 50vw;
+    max-width: 50vw;
+    position: fixed;
+    top: 0;
+    right: -50vw;
+    text-align: center;
+    font-size: 30px;
+    transition: .5s ease;
+    z-index: 700;
+}
+
+.menu-link {
+    color: rgb(180, 180, 180);
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.menu-link:hover {
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+.menu-selector-div {
+    border-width: 1px 0px 0px 0px;
+    border-style: solid;
+    border-color: rgb(83, 83, 83);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: first baseline;
+    align-items: center;
+    min-height: 60px;
+}
+
+.ham-x {
+    height: 50px;
+    width: 50px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: auto;
+    position: relative;
+}
+
+.ham-x span {
+    height: 2px;
+    width: 40%;
+    background-color: gray;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 200;
+}
+
+.ham-x:hover {
+    span {
+        background-color: white;
+        height: 3px;
+    }
+
+    cursor: pointer;
+}
+
+.ham-x span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.ham-x span:nth-child(2) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.phone-number-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.phone-number {
+    border-width: 2px;
+    border-style: solid;
+    border-color: #07568D;
+    padding: 15px 50px;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: 0.3s ease;
+}
+
+.phone-number:hover {
+    background-color: #07568D;
+    color: white;
+    cursor: pointer;
+}
+
+.menu.active {
+    right: 0;
+}
+
+.menu-outside {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    opacity: 0;
+    background-color: black;
+    position: fixed;
+    transition: 0.5s ease;
+    z-index: -5;
+}
+
+.menu-outside.active {
+    opacity: 0.5;
+    z-index: 500;
+}
+
+
+@media (max-width: 1250px) {
+    .header {
+        background-color: white;
+        grid-template-columns: 200px 1fr 250px;
+    }
+
+    .mid-header-sec {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+        padding-left: 0px;
+        padding-right: 50px;
+        height: 100px;
+    }
+
+    .header-logo {
+        margin-left: 50px;
+        margin-top: -10px;
+        height: 80px;
+    }
+
+    .hamburger-img {
+        display: block;
+        cursor: pointer;
+    }
+
+    .right-header-sec {
+        margin-right: 50px;
+    }
+
+    .sidebar-menu:hover .menu {
+        display: block;
+    }
+    
+    .hamburger-img:hover {
+        cursor: pointer;
+    }
+
+    .selector-line {
+        display: none;
+    }
+
+    .phone-number-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+    
+    .phone-number {
+        border-width: 2px;
+        border-style: solid;
+        border-color: #07568D;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 20px;
+        transition: 0.3s ease;
+    }
+}
+
+@media (max-width: 680px) {
+    .header {
+        grid-template-columns: 200px 1fr 0px;
+    }
+
+    .header-number {
+        display: none;
+    }
+
+    .mid-header-sec {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+        padding-left: 0px;
+        padding-right: 50px;
+        height: 100px;
+    }
+
+    .header-logo {
+        margin-left: 50px;
+        margin-top: -10px;
+        height: 80px;
+    }
+
+    .hamburger-img {
+        display: block;
+        cursor: pointer;
+    }
+
+    .sidebar-menu:hover .menu {
+        display: block;
+    }
+    
+    .hamburger-img:hover {
+        cursor: pointer;
+    }
+
+    .selector-line {
+        display: none;
+    }
+
+    .phone-number-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+    
+    .phone-number {
+        border-width: 2px;
+        border-style: solid;
+        border-color: #07568D;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 15px;
+        transition: 0.3s ease;
+    }
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) { 
+    .header {
+        height: 300px;
+        grid-template-columns: 200px 1fr 0px;
+    }
+
+    .header-number {
+        display: none;
+    }
+
+    .left-header-sec {
+        width: 400px;
+    }
+
+    .header-logo {
+        margin-left: auto;
+        margin-top: -10px;
+        height: 150px;
+        cursor: pointer;
+    }
+    
+    .hamburger-img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .ham-x {
+        height: 50px;
+        width: 50px;
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-left: auto;
+        position: relative;
+    }
+    
+    .ham-x span {
+        height: 6px;
+        width: 80%;
+        background-color: gray;
+        border-radius: 25px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 200;
+    }
+    
+    .ham-x:hover {
+        span {
+            background-color: white;
+            height: 3px;
+        }
+    
+        cursor: pointer;
+    }
+
+    .phone-number {
+        border-width: 2px;
+        border-style: solid;
+        border-color: #07568D;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 40px;
+        transition: 0.3s ease;
+    }
+
+    .menu {
+        background-color: #191919;
+        height: 100vh;
+        width: 50vw;
+        max-width: 50vw;
+        position: fixed;
+        top: 0;
+        right: -50vw;
+        text-align: center;
+        font-size: 30px;
+        transition: .5s ease;
+        z-index: 700;
+    }
+    
+    .menu-link {
+        color: rgb(180, 180, 180);
+        font-size: 40px;
+        margin-left: 30px;
+    }
+    
+    .menu-link:hover {
+        cursor: pointer;
+        color: white;
+        font-weight: bold;
+    }
+    
+    .menu-selector-div {
+        border-width: 1px 0px 0px 0px;
+        border-style: solid;
+        border-color: rgb(83, 83, 83);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: first baseline;
+        align-items: center;
+        min-height: 100px;
+    }
+    
+    .ham-x {
+        height: 50px;
+        width: 50px;
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-left: auto;
+        position: relative;
+    }
+    
+    .ham-x:hover {
+        span {
+            background-color: white;
+            height: 8px;
+        }
+    
+        cursor: pointer;
+    }
+    
+    .phone-number-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 250px;
+        margin-bottom: 20px;
+    }
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) { 
+    .header {
+        height: 300px;
+        grid-template-columns: 200px 1fr 0px;
+    }
+
+    .header-number {
+        display: none;
+    }
+
+    .left-header-sec {
+        width: 400px;
+    }
+
+    .header-logo {
+        margin-left: auto;
+        margin-top: -10px;
+        height: 150px;
+        cursor: pointer;
+    }
+    
+    .hamburger-img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .ham-x {
+        height: 50px;
+        width: 50px;
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-left: auto;
+        position: relative;
+    }
+    
+    .ham-x span {
+        height: 6px;
+        width: 80%;
+        background-color: gray;
+        border-radius: 25px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 200;
+    }
+    
+    .ham-x:hover {
+        span {
+            background-color: white;
+            height: 3px;
+        }
+    
+        cursor: pointer;
+    }
+
+    .phone-number {
+        border-width: 2px;
+        border-style: solid;
+        border-color: #07568D;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 40px;
+        transition: 0.3s ease;
+    }
+
+    .menu {
+        background-color: #191919;
+        height: 100vh;
+        width: 50vw;
+        max-width: 50vw;
+        position: fixed;
+        top: 0;
+        right: -50vw;
+        text-align: center;
+        font-size: 30px;
+        transition: .5s ease;
+        z-index: 700;
+    }
+    
+    .menu-link {
+        color: rgb(180, 180, 180);
+        font-size: 40px;
+        margin-left: 30px;
+    }
+    
+    .menu-link:hover {
+        cursor: pointer;
+        color: white;
+        font-weight: bold;
+    }
+    
+    .menu-selector-div {
+        border-width: 1px 0px 0px 0px;
+        border-style: solid;
+        border-color: rgb(83, 83, 83);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: first baseline;
+        align-items: center;
+        min-height: 100px;
+    }
+    
+    .ham-x {
+        height: 50px;
+        width: 50px;
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-left: auto;
+        position: relative;
+    }
+    
+    .ham-x:hover {
+        span {
+            background-color: white;
+            height: 8px;
+        }
+    
+        cursor: pointer;
+    }
+    
+    .phone-number-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 250px;
+        margin-bottom: 20px;
+    }
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px)and (-webkit-min-device-pixel-ratio: 2) {
+    .header {
+        height: 300px;
+        grid-template-columns: 200px 1fr 0px;
+    }
+
+    .header-number {
+        display: none;
+    }
+
+    .left-header-sec {
+        width: 400px;
+    }
+
+    .header-logo {
+        margin-left: auto;
+        margin-top: -10px;
+        height: 150px;
+        cursor: pointer;
+    }
+    
+    .hamburger-img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .ham-x {
+        height: 50px;
+        width: 50px;
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-left: auto;
+        position: relative;
+    }
+    
+    .ham-x span {
+        height: 6px;
+        width: 80%;
+        background-color: gray;
+        border-radius: 25px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 200;
+    }
+    
+    .ham-x:hover {
+        span {
+            background-color: white;
+            height: 3px;
+        }
+    
+        cursor: pointer;
+    }
+
+    .phone-number {
+        border-width: 2px;
+        border-style: solid;
+        border-color: #07568D;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 40px;
+        transition: 0.3s ease;
+    }
+
+    .menu {
+        background-color: #191919;
+        height: 100vh;
+        width: 50vw;
+        max-width: 50vw;
+        position: fixed;
+        top: 0;
+        right: -50vw;
+        text-align: center;
+        font-size: 30px;
+        transition: .5s ease;
+        z-index: 700;
+    }
+    
+    .menu-link {
+        color: rgb(180, 180, 180);
+        font-size: 40px;
+        margin-left: 30px;
+    }
+    
+    .menu-link:hover {
+        cursor: pointer;
+        color: white;
+        font-weight: bold;
+    }
+    
+    .menu-selector-div {
+        border-width: 1px 0px 0px 0px;
+        border-style: solid;
+        border-color: rgb(83, 83, 83);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: first baseline;
+        align-items: center;
+        min-height: 100px;
+    }
+    
+    .ham-x {
+        height: 50px;
+        width: 50px;
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-left: auto;
+        position: relative;
+    }
+    
+    .ham-x:hover {
+        span {
+            background-color: white;
+            height: 8px;
+        }
+    
+        cursor: pointer;
+    }
+    
+    .phone-number-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 250px;
+        margin-bottom: 20px;
+    }
+}
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px)and (-webkit-min-device-pixel-ratio: 2) {
+    .header {
+        height: 300px;
+        grid-template-columns: 200px 1fr 0px;
+    }
+
+    .header-number {
+        display: none;
+    }
+
+    .left-header-sec {
+        width: 400px;
+    }
+
+    .header-logo {
+        margin-left: auto;
+        margin-top: -10px;
+        height: 150px;
+        cursor: pointer;
+    }
+    
+    .hamburger-img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .ham-x {
+        height: 50px;
+        width: 50px;
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-left: auto;
+        position: relative;
+    }
+    
+    .ham-x span {
+        height: 6px;
+        width: 80%;
+        background-color: gray;
+        border-radius: 25px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 200;
+    }
+    
+    .ham-x:hover {
+        span {
+            background-color: white;
+            height: 3px;
+        }
+    
+        cursor: pointer;
+    }
+
+    .phone-number {
+        border-width: 2px;
+        border-style: solid;
+        border-color: #07568D;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 40px;
+        transition: 0.3s ease;
+    }
+
+    .menu {
+        background-color: #191919;
+        height: 100vh;
+        width: 50vw;
+        max-width: 50vw;
+        position: fixed;
+        top: 0;
+        right: -50vw;
+        text-align: center;
+        font-size: 30px;
+        transition: .5s ease;
+        z-index: 700;
+    }
+    
+    .menu-link {
+        color: rgb(180, 180, 180);
+        font-size: 40px;
+        margin-left: 30px;
+    }
+    
+    .menu-link:hover {
+        cursor: pointer;
+        color: white;
+        font-weight: bold;
+    }
+    
+    .menu-selector-div {
+        border-width: 1px 0px 0px 0px;
+        border-style: solid;
+        border-color: rgb(83, 83, 83);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: first baseline;
+        align-items: center;
+        min-height: 100px;
+    }
+    
+    .ham-x {
+        height: 50px;
+        width: 50px;
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-left: auto;
+        position: relative;
+    }
+    
+    .ham-x:hover {
+        span {
+            background-color: white;
+            height: 8px;
+        }
+    
+        cursor: pointer;
+    }
+    
+    .phone-number-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 250px;
+        margin-bottom: 20px;
+    }
+}

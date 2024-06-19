@@ -1,0 +1,717 @@
+.loan-name-div {
+    margin-top: -20px;
+    background-color: rgba(4, 57, 98, 1);
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.loan-name-text {
+    flex: 500px;
+    color: white;
+    font-size: 30px;
+}
+
+.div-padding {
+    flex: 1;
+}
+
+.content-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 15vh 0vw;
+}
+
+.hero-div {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 50px;
+}
+
+.left-hero-side {
+    flex: 1;
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.img-div {
+    position: absolute;
+    background-image: url("../Images/house.jpeg");
+    background-size: cover;
+    background-position: center;
+    width: 35vw;
+    height: 35vh;
+}
+
+.right-hero-side {
+    flex: 1;
+    width: 50vw;
+}
+
+.our-services-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+.our-services-text {
+    font-size: 20px;
+    width: 40vw;
+    line-height: 35px;
+}
+
+.why-us-div {
+    margin-top: 10vh;
+    padding: 0px 200px;
+}
+
+.why-us-title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.why-us-text {
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.contact-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.welcome-btn {
+    background-color: white;
+    color: #07568d;
+    border-color: #07568d;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 20px;
+    transition: 0.25s;
+    margin-top: 10px;
+}
+
+.welcome-btn:hover {
+    background-color: #07568d;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 1450px) {
+    .content-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 5vh 0vw;
+    }
+
+    .hero-div {
+        display: flex;
+        flex-direction: row;
+        padding: 0px 15px;
+    }
+
+    .img-div {
+        background-image: url("../Images/house.jpeg");
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        width: 400px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 850px) {
+    .content-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 5vh 0vw;
+    }
+
+    .hero-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 0px;
+    }
+
+    .left-hero-side {
+        flex: 1;
+        width: 50vw;
+        margin-top: 200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .img-div {
+        background-image: url("../Images/house.jpeg");
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        width: 700px;
+        height: 300px;
+    }
+
+    .right-hero-side {
+        flex: 1;
+        width: 80vw;
+        margin-top: 80px;
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .our-services-title {
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: 100px;
+    }
+    
+    .our-services-text {
+        font-size: 20px;
+        width: 80vw;
+        line-height: 35px;
+    }
+
+    .why-us-div {
+        margin-top: 3vh;
+        padding: 0px 80px;
+    }
+}
+
+@media (max-width: 700px) {
+    .hero-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 0px;
+    }
+
+    .left-hero-side {
+        flex: 1;
+        width: 50vw;
+        margin-top: 150px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .img-div {
+        background-image: url("../Images/house.jpeg");
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        width: 600px;
+        height: 300px;
+    }
+
+    .right-hero-side {
+        flex: 1;
+        width: 70vw;
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .our-services-title {
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: 100px;
+    }
+    
+    .our-services-text {
+        font-size: 20px;
+        width: 60vw;
+        line-height: 35px;
+    }
+
+    .why-us-div {
+        margin-top: 5vh;
+        padding: 0px 80px;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 0px;
+    }
+
+    .left-hero-side {
+        flex: 1;
+        width: 50vw;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .img-div {
+        background-image: url("../Images/house.jpeg");
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        width: 400px;
+        height: 200px;
+    }
+
+    .right-hero-side {
+        flex: 1;
+        width: 70vw;
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .our-services-title {
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: 100px;
+    }
+    
+    .our-services-text {
+        font-size: 20px;
+        width: 60vw;
+        line-height: 35px;
+    }
+
+    .why-us-div {
+        margin-top: 5vh;
+        padding: 0px 80px;
+    }
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) { 
+    .loan-name-div {
+        margin-top: -20px;
+        background-color: rgba(4, 57, 98, 1);
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
+    }
+    
+    .loan-name-text {
+        color: white;
+        font-size: 60px;
+    }
+
+    .hero-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 0px;
+    }
+
+    .left-hero-side {
+        flex: 1;
+        width: 50vw;
+        margin-top: 200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .img-div {
+        background-image: url("../Images/house.jpeg");
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        width: 900px;
+        height: 500px;
+    }
+
+    .right-hero-side {
+        flex: 1;
+        width: 70vw;
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .our-services-title {
+        font-weight: bold;
+        margin-top: 250px;
+        font-size: 50px;
+    }
+    
+    .our-services-text {
+        margin-top: -20px;
+        width: 80vw;
+        line-height: 50px;
+        font-size: 35px;
+    }
+
+    .why-us-div {
+        margin-top: 2vh;
+        padding: 0px 150px;
+    }
+
+    .why-us-title {
+        font-size: 50px;
+        font-weight: bold;
+    }
+    
+    .why-us-text {
+        margin-top: 50px;
+        font-size: 35px;
+        line-height: 50px;
+    }
+    
+    .welcome-btn {
+        background-color: white;
+        color: #07568d;
+        border-color: #07568d;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 5px;
+        padding: 25px;
+        font-size: 40px;
+        transition: 0.25s;
+        margin-top: 10px;
+    }
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) { 
+    .loan-name-div {
+        margin-top: -20px;
+        background-color: rgba(4, 57, 98, 1);
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
+    }
+    
+    .loan-name-text {
+        color: white;
+        font-size: 60px;
+    }
+
+    .hero-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 0px;
+    }
+
+    .left-hero-side {
+        flex: 1;
+        width: 50vw;
+        margin-top: 200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .img-div {
+        background-image: url("../Images/house.jpeg");
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        width: 900px;
+        height: 500px;
+    }
+
+    .right-hero-side {
+        flex: 1;
+        width: 70vw;
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .our-services-title {
+        font-weight: bold;
+        margin-top: 250px;
+        font-size: 50px;
+    }
+    
+    .our-services-text {
+        margin-top: -20px;
+        width: 80vw;
+        line-height: 50px;
+        font-size: 35px;
+    }
+
+    .why-us-div {
+        margin-top: 2vh;
+        padding: 0px 150px;
+    }
+
+    .why-us-title {
+        font-size: 50px;
+        font-weight: bold;
+    }
+    
+    .why-us-text {
+        margin-top: 50px;
+        font-size: 35px;
+        line-height: 50px;
+    }
+    
+    .welcome-btn {
+        background-color: white;
+        color: #07568d;
+        border-color: #07568d;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 5px;
+        padding: 25px;
+        font-size: 40px;
+        transition: 0.25s;
+        margin-top: 10px;
+    }
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px)and (-webkit-min-device-pixel-ratio: 2) {
+    .loan-name-div {
+        margin-top: -20px;
+        background-color: rgba(4, 57, 98, 1);
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
+    }
+    
+    .loan-name-text {
+        color: white;
+        font-size: 60px;
+    }
+
+    .hero-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 0px;
+    }
+
+    .left-hero-side {
+        flex: 1;
+        width: 50vw;
+        margin-top: 200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .img-div {
+        background-image: url("../Images/house.jpeg");
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        width: 900px;
+        height: 500px;
+    }
+
+    .right-hero-side {
+        flex: 1;
+        width: 70vw;
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .our-services-title {
+        font-weight: bold;
+        margin-top: 250px;
+        font-size: 50px;
+        width: 80vw;
+    }
+    
+    .our-services-text {
+        margin-top: -20px;
+        width: 80vw;
+        line-height: 50px;
+        font-size: 35px;
+    }
+
+    .why-us-div {
+        margin-top: 2vh;
+        padding: 0px 150px;
+    }
+
+    .why-us-title {
+        font-size: 50px;
+        font-weight: bold;
+    }
+    
+    .why-us-text {
+        margin-top: 50px;
+        font-size: 35px;
+        line-height: 50px;
+    }
+    
+    .welcome-btn {
+        background-color: white;
+        color: #07568d;
+        border-color: #07568d;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 5px;
+        padding: 25px;
+        font-size: 40px;
+        transition: 0.25s;
+        margin-top: 10px;
+    }
+}
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px)and (-webkit-min-device-pixel-ratio: 2) {
+    .loan-name-div {
+        margin-top: -20px;
+        background-color: rgba(4, 57, 98, 1);
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
+    }
+    
+    .loan-name-text {
+        color: white;
+        font-size: 60px;
+    }
+
+    .hero-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 0px;
+    }
+
+    .left-hero-side {
+        flex: 1;
+        width: 50vw;
+        margin-top: 200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .img-div {
+        background-image: url("../Images/house.jpeg");
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        width: 900px;
+        height: 500px;
+    }
+
+    .right-hero-side {
+        flex: 1;
+        width: 70vw;
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .our-services-title {
+        font-weight: bold;
+        margin-top: 200px;
+        font-size: 50px;
+    }
+    
+    .our-services-text {
+        margin-top: -20px;
+        width: 70vw;
+        line-height: 70px;
+        font-size: 32px;
+    }
+
+    .why-us-div {
+        margin-top: 2vh;
+        padding: 0px 150px;
+    }
+
+    .why-us-title {
+        font-size: 50px;
+        font-weight: bold;
+    }
+    
+    .why-us-text {
+        margin-top: 50px;
+        font-size: 32px;
+        line-height: 70px;
+    }
+    
+    .welcome-btn {
+        background-color: white;
+        color: #07568d;
+        border-color: #07568d;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 5px;
+        padding: 25px;
+        font-size: 40px;
+        transition: 0.25s;
+        margin-top: 10px;
+    }
+}

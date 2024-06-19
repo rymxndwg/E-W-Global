@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="Styles/header.css">
+        <link rel="stylesheet" href="Styles/general.css">
+        <link rel="stylesheet" href="Styles/contact.css">
+
+        <script src="https://kit.fontawesome.com/da85db3896.js" crossorigin="anonymous"></script>
+    </head>
+    <body>        
+        <div class="header">
+            <div class="left-header-sec">
+                <a class="header-link-logo" href="index.html">
+                    <img class="header-logo" src="Images/Logo.png">
+                </a>
+            </div>
+
+            <div class="mid-header-sec">
+                <img class="hamburger-img" src="Icons/Hamburger.png" onclick="openSidebar()">
+
+                <div class="selector-line js-home">
+                    <a class="header-link" href="index.html">
+                        <i class="fas fa-home"></i>
+                        Home
+                    </a>
+                </div>
+
+                <div class="selector-line js-aboutus">
+                    <a class="header-link" href="aboutus.html">
+                        <i class="fas fa-globe"></i>
+                        About Us
+                    </a>
+                </div>
+                
+                <div class="selector-line js-services">
+                    <div class="dropdown">
+                        <a class="header-link">
+                            <i class="fas fa-lightbulb"></i>
+                            Services
+                        </a>
+                        <div class="content">
+                            <a class="service-link js-header-primary-property-loan">Primary Property Loans</a>
+                            <a class="service-link js-header-investment-property-loans">Investment Property Loans</a>
+                            <a class="service-link js-header-commerical-property-loan">Commercial Property Loans</a>
+                            <a class="service-link js-header-hard-money-loan">Hard Money, Bridge Loans</a>
+                            <a class="service-link js-header-fix-flip-loan">Fix Flip Loans</a>
+                            <a class="service-link js-header-construction-loan">Construction Loans</a>
+                            <a class="service-link js-header-foreign-loan">Foreign National Loans</a>
+                            <a class="service-link js-header-land-loan">Land Loans</a>
+                            <a class="service-link js-header-sba-loan">SBA Loans</a>
+                            <a class="service-link js-header-working-loan">Working Capital Loans</a>
+                            <a class="service-link js-header-equipment-loan">Equipment Loans</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="selector-line js-calculator">
+                    <a class="header-link" href="calculator.html">
+                        <i class="fas fa-line-chart"></i>
+                        Compare Rates
+                    </a>
+                </div>
+
+                <div class="home-selector-line selector-line js-contact-us">
+                    <a class="header-link" href="contact.html">
+                        <i class="fas fa-envelope"></i>
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+
+            <div class="right-header-sec">
+                <a class="header-number">
+                    <i class="fas fa-phone"></i>
+                    929-988-1689
+                </a>
+            </div>
+        </div>
+
+        <div class="menu-outside"></div>
+
+        <div class="menu">
+            <nav>
+                <div class="ham-x js-menu-x-btn">
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+
+            <div class="phone-number-div">
+                <div class="phone-number">
+                    <i class="fas fa-phone"></i>
+                    929-988-1689
+                </div>
+            </div>
+
+            <div class="menu-selector-div">
+                <a class="menu-link" href="index.html">
+                    <i class="fas fa-home"></i>
+                    Home
+                </a>
+            </div>
+            <div class="menu-selector-div">
+                <a class="menu-link" href="aboutus.html">
+                    <i class="fas fa-globe"></i>
+                    About Us
+                </a>
+            </div>
+            <div class="menu-selector-div">
+                <a class="menu-link" href="services.html">
+                    <i class="fas fa-lightbulb"></i>
+                    Services
+                </a>
+            </div>
+
+            <div class="menu-selector-div">
+                <a class="menu-link" href="calculator.html">
+                    <i class="fas fa-line-chart"></i>
+                    Compare Rates
+                </a>
+            </div>
+            <div class="menu-selector-div">
+                <a class="menu-link" href="contact.html">
+                    <i class="fas fa-envelope"></i>
+                    Contact Us
+                </a>
+            </div>
+        </div>
+
+        <div class="get-in-touch-div">
+            <p class="get-in-touch-text">Get in touch with us</p>
+        </div>
+
+        <div class="contact-section-bg">
+            <div class="left-contact-picture"></div>
+            <div class="right-contact-picture"> </div>
+            <div class="contact-section-div">
+                <div class="left-contact-div">
+                    <p class="contact-title">Contact Us</p>
+                    <div class="contact-info">
+                        <p class="contact-msg">We would love to hear from you. Send us a message and we’ll get back to you shortly.</p>
+                        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                            
+                            <input type="hidden" name="access_key" value="f1e8433f-24b0-458a-ae31-0490f0f9c1f8">
+
+                            <div class="contact-input-field">
+                                <p class="input-name">Email *</p>
+                                <input class="input-box" type="email" name="email" placeholder="Email" required>
+                            </div>
+    
+                            <div class="contact-input-field">
+                                <p class="input-name">Name *</p>
+                                <input class="input-box" type="text" name="name" placeholder="Name" required>
+                            </div>
+    
+                            <div class="contact-input-field">
+                                <p class="input-name">Phone *</p>
+                                <input class="input-box" type="tel" name="phone" placeholder="Phone" required>
+                            </div>
+
+                            <div class="contact-input-field">
+                                <p class="input-name">Service *</p>
+                                <select class="input-box-select" list="services" name="Service" placeholder="Service" required>
+                                    <option value="Primary Property Loan">Primary Property Loan</option>
+                                    <option value="Investment Property Loan">Investment Property Loan</option>
+                                    <option value="Commercial Property Loan">Commercial Property Loan</option>
+                                    <option value="Hard Money, Bridge Loan">Hard Money, Bridge Loan</option>
+                                    <option value="Fix Flip Loan">Fix Flip Loan</option>
+                                    <option value="Construction Loan">Construction Loan</option>
+                                    <option value="Foreign National Loan">Foreign National Loan</option>
+                                    <option value="Land Loan">Land Loan</option>
+                                    <option value="SBA Loan">SBA Loan</option>
+                                    <option value="Working Loan">Working Loan</option>
+                                    <option value="Equipment Loan">Equipment Loan</option>
+                                </select>
+                            </div>
+    
+                            <div class="contact-input-field">
+                                <p class="input-name">Message (Optional)</p>
+                                <textarea class="input-textarea input-box" rows="4" name="message" placeholder="Message"></textarea>
+                            </div>
+
+                            <div class="contact-input-field">
+                                <button type="submit">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="right-contact-div">
+                    <div class="right-contact-box">
+                        <div class="location-header">
+                            <div class="new-york-div">
+                                New York
+                            </div>
+
+                            <div class="san-jose-div">
+                                San Jose
+                            </div>
+                        </div>
+
+                        <iframe class="san-jose-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4482.598747278569!2d-121.90221038818994!3d37.39749455349756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fceabd6ec7237%3A0xa7e4d30ffc9a64d4!2s1899%20Concourse%20Dr%2C%20San%20Jose%2C%20CA%2095131!5e0!3m2!1sen!2sus!4v1717806918898!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="san-jose-times">
+                            <p class="san-jose-hours">Mon: 10AM-6PM</p>
+                            <p class="san-jose-hours">Tue: 10AM-6PM</p>
+                            <p class="san-jose-hours">Wed: 10AM-6PM</p>
+                            <p class="san-jose-hours">Thur: 10AM-6PM</p>
+                            <p class="san-jose-hours">Fri: 10AM-6PM</p>
+                        </div>
+
+                        <iframe class="new-york-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1371175329004!2d-73.83102812351032!3d40.75900883473555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c26011bfd17df3%3A0xc89977baea95854d!2s136-31%2041st%20Ave%20%238a%2C%20Flushing%2C%20NY%2011355!5e0!3m2!1sen!2sus!4v1717968557207!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="new-york-times">
+                            <p class="new-york-hours">Mon: 10AM-6PM</p>
+                            <p class="new-york-hours">Tue: 10AM-6PM</p>
+                            <p class="new-york-hours">Wed: 10AM-6PM</p>
+                            <p class="new-york-hours">Thur: 10AM-6PM</p>
+                            <p class="new-york-hours">Fri: 10AM-6PM</p>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+
+        <script type="module" src="Scripts/header.js"></script>
+        <script type="module" src="Scripts/contact.js"></script>
+    </body>
+</html>

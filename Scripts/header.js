@@ -1,7 +1,8 @@
 import {changeServiceName} from './service-handler.js';
 
 function openPage(pageUrl) {
-    window.location.replace(pageUrl);
+    console.log("Called")
+    //window.location.replace(pageUrl);
 }
 
 function openSidebar() {

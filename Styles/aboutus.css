@@ -6,7 +6,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.2);
 }
 
 .about-us-text {
@@ -20,75 +20,247 @@
     background-color: green;
 }
 
-.about-us-grid {
-    height: 80vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-image: url("../Images/CityDownView.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left;
+body {
+    background-color: #d6e9f7;
 }
 
-.background-box {
-    margin-top: 50px;
-    background-color: rgba(0, 0, 0, 0.8);
-    width: 700px;
-    height: 500px;
+.about-us-grid {
+    height: 280vh;
+    padding: 100px 50px;
+    background-color: #d6e9f7;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-bottom: 50px;
+    justify-content: space-between;
 }
 
-.about-message-title {
-    font-size: 30px;
+.left-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.right-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.about-us-img, .about-us-img-2, .about-us-img-3 {
+    background-image: url('../Images/aboutus1.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 65%;
+    height: 800px;
+    position: relative;
+}
+
+.about-us-img-2 {
+    background-image: url('../Images/aboutus2.jpg');
+}
+
+.about-us-img-3 {
+    background-image: url('../Images/aboutus3.jpg');
+}
+
+.about-us-container {
+    position: absolute;
+    background-color: rgb(37, 53, 81);
+    top: 15%;
+    left: 75%;
+    padding: 55px;
+}
+
+.what-we-container {
+    position: absolute;
+    background-color: rgb(37, 53, 81);
+    top: 15%;
+    right: 75%;
+    padding: 55px;
+}
+
+.about-us-container-title {
+    font-size: 33px;
     color: white;
-    margin-bottom: 0px;
 }
 
-.about-message {
+.about-us-msg-1, .about-us-msg-2 {
+    font-size: 16px;
+    width: 700px;
     color: white;
-    padding: 5px;
-    width: 600px;
-    text-align: center;
+    line-height: 35px;
 }
 
-/* Large devices (large desktops, 1200px and up) */
-@media (max-width: 1200px) {
+@media (max-width: 1550px) {
+    .about-us-msg-1, .about-us-msg-2 {
+        font-size: 16px;
+        width: 600px;
+        color: white;
+        line-height: 35px;
+    }
 }
 
-/* Small devices (tablets, 768px and up) */
-@media (max-width: 900px) { 
+@media (max-width: 1300px) {
+    .about-us-img, .about-us-img-2, .about-us-img-3 {
+        background-image: url('../Images/aboutus1.jpg');
+        background-size: cover;
+        background-position: center;
+        width: 85%;
+        height: 800px;
+        position: relative;
+    }
+
+    .about-us-img-2 {
+        background-image: url('../Images/aboutus2.jpg');
+    }
+    
+    .about-us-img-3 {
+        background-image: url('../Images/aboutus3.jpg');
+    }
+
+    .about-us-container {
+        position: absolute;
+        background-color: rgb(37, 53, 81);
+        top: 15%;
+        left: 55%;
+        padding: 55px;
+    }
+    
+    .what-we-container {
+        position: absolute;
+        background-color: rgb(37, 53, 81);
+        top: 15%;
+        right: 55%;
+        padding: 55px;
+    }
+
+    .about-us-msg-1, .about-us-msg-2 {
+        font-size: 16px;
+        width: 400px;
+        color: white;
+        line-height: 35px;
+    }
 }
 
-/* Small devices (tablets, 768px and up) */
-@media (max-width: 600px) { 
-    .background-box {
-        margin-top: 50px;
-        background-color: rgba(0, 0, 0, 0.8);
-        width: 500px;
+@media (max-width: 1100px) {
+    .about-us-msg-1, .about-us-msg-2 {
+        font-size: 16px;
+        width: 350px;
+        color: white;
+        line-height: 35px;
+    }
+}
+
+@media (max-width: 800px) {
+    .about-us-grid {
+        height: 250vh;
+        padding: 100px 50px;
+        background-color: #d6e9f7;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        height: 700px;
-        margin-bottom: 50px;
+        justify-content: space-between;
+    }
+
+    .about-us-img, .about-us-img-2, .about-us-img-3 {
+        background-image: url('../Images/aboutus1.jpg');
+        background-size: cover;
+        background-position: center;
+        width: 95%;
+        height: 500px;
+        position: relative;
     }
     
-    .about-message-title {
-        font-size: 30px;
-        color: white;
-        margin-bottom: 0px;
+    .about-us-img-2 {
+        background-image: url('../Images/aboutus2.jpg');
     }
     
-    .about-message {
+    .about-us-img-3 {
+        background-image: url('../Images/aboutus3.jpg');
+    }
+
+    .about-us-container {
+        position: absolute;
+        background-color: rgb(37, 53, 81);
+        top: 55%;
+        left: 25%;
+        padding: 55px;
+    }
+    
+    .what-we-container {
+        position: absolute;
+        background-color: rgb(37, 53, 81);
+        top: 55%;
+        right: 25%;
+        padding: 55px;
+    }
+    
+    .about-us-container-title {
+        font-size: 33px;
         color: white;
-        padding: 5px;
+    }
+    
+    .about-us-msg-1, .about-us-msg-2 {
+        font-size: 16px;
         width: 400px;
-        text-align: center;
+        color: white;
+        line-height: 35px;
+    }
+}
+
+@media (max-width: 700px) {
+    .about-us-grid {
+        height: 200vh;
+        padding: 100px 50px;
+        background-color: #d6e9f7;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .about-us-img, .about-us-img-2, .about-us-img-3 {
+        background-image: url('../Images/aboutus1.jpg');
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 400px;
+        position: relative;
+    }
     
+    .about-us-img-2 {
+        background-image: url('../Images/aboutus2.jpg');
+    }
+    
+    .about-us-img-3 {
+        background-image: url('../Images/aboutus3.jpg');
+    }
+
+    .about-us-container {
+        position: absolute;
+        background-color: rgb(37, 53, 81);
+        top: 55%;
+        left: 5%;
+        padding: 25px;
+    }
+    
+    .what-we-container {
+        position: absolute;
+        background-color: rgb(37, 53, 81);
+        top: 55%;
+        right: 5%;
+        padding: 25px;
+    }
+    
+    .about-us-container-title {
+        font-size: 33px;
+        color: white;
+    }
+    
+    .about-us-msg-1, .about-us-msg-2 {
+        font-size: 16px;
+        width: 300px;
+        color: white;
+        line-height: 15px;
     }
 }
 
@@ -103,56 +275,63 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
     }
     
     .about-us-text {
-        flex: 500px;
         color: white;
-        font-size: 70px;
+        font-size: 60px;
     }
-    
-    .about-us-padding {
-        flex: 1;
-        background-color: green;
-    }
-    
+
     .about-us-grid {
-        height: 80vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        background-image: url("../Images/CityDownView.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: left;
-    }
-    
-    .background-box {
-        margin-top: 50px;
-        background-color: rgba(0, 0, 0, 0.8);
-        width: 900px;
-        height: 1300px;
-        display: flex;
+        height: 180vh;
+        padding: 100px 50px;
+        background-color: #d6e9f7;
+        display: block;
         flex-direction: column;
-        align-items: center;
-        margin-bottom: 50px;
+        justify-content: space-evenly;
+        margin-top: 0;
+    }
+
+    .about-us-img-2, .about-us-img-3 {
+        margin-top: 500px;
+    }
+
+    .about-us-img-2 {
+        background-image: url('../Images/aboutus2.jpg');
     }
     
-    .about-message-title {
-        font-size: 80px;
-        color: white;
-        margin-bottom: 0px;
+    .about-us-img-3 {
+        background-image: url('../Images/aboutus3.jpg');
     }
     
-    .about-message {
+    .about-us-container {
+        position: absolute;
+        background-color: rgb(37, 53, 81);
+        top: 65%;
+        left: 5%;
+        padding: 55px;
+    }
+    
+    .what-we-container {
+        position: absolute;
+        background-color: rgb(37, 53, 81);
+        top: 65%;
+        right: 5%;
+        padding: 55px;
+    }
+
+    .about-us-container-title {
+        font-size: 50px;
         color: white;
-        padding: 5px 5px 5px;
-        width: 800px;
-        text-align: center;
-        font-size: 32px;
+    }
+    
+    .about-us-msg-1, .about-us-msg-2 {
+        font-size: 30px;
+        width: 700px;
+        color: white;
+        line-height: 40px;
     }
 }
 
@@ -160,6 +339,71 @@
 
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) { 
+    .about-us-div {
+        margin-top: -20px;
+        background-color: rgba(4, 57, 98, 1);
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
+    }
+    
+    .about-us-text {
+        color: white;
+        font-size: 60px;
+    }
+
+    .about-us-grid {
+        height: 180vh;
+        padding: 100px 50px;
+        background-color: #d6e9f7;
+        display: block;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 0;
+    }
+
+    .about-us-img-2, .about-us-img-3 {
+        margin-top: 500px;
+    }
+
+    .about-us-img-2 {
+        background-image: url('../Images/aboutus2.jpg');
+    }
+    
+    .about-us-img-3 {
+        background-image: url('../Images/aboutus3.jpg');
+    }
+    
+    .about-us-container {
+        position: absolute;
+        background-color: rgb(37, 53, 81);
+        top: 65%;
+        left: 5%;
+        padding: 55px;
+    }
+    
+    .what-we-container {
+        position: absolute;
+        background-color: rgb(37, 53, 81);
+        top: 65%;
+        right: 5%;
+        padding: 55px;
+    }
+
+    .about-us-container-title {
+        font-size: 50px;
+        color: white;
+    }
+    
+    .about-us-msg-1, .about-us-msg-2 {
+        font-size: 30px;
+        width: 700px;
+        color: white;
+        line-height: 40px;
+    }
 }
 
 /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
@@ -173,57 +417,63 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
     }
     
     .about-us-text {
-        flex: 500px;
         color: white;
-        font-size: 70px;
+        font-size: 60px;
     }
-    
-    .about-us-padding {
-        flex: 1;
-        background-color: green;
-    }
-    
+
     .about-us-grid {
-        height: 80vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        background-image: url("../Images/CityDownView.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: left;
-    }
-    
-    .background-box {
-        margin-top: 50px;
-        background-color: rgba(0, 0, 0, 0.8);
-        width: 900px;
-        height: 1300px;
-        display: flex;
+        height: 180vh;
+        padding: 100px 50px;
+        background-color: #d6e9f7;
+        display: block;
         flex-direction: column;
-        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 0;
+    }
+
+    .about-us-img-2, .about-us-img-3 {
+        margin-top: 500px;
+    }
+
+    .about-us-img-2 {
+        background-image: url('../Images/aboutus2.jpg');
     }
     
-    .about-message-title {
-        font-size: 80px;
-        color: white;
-        margin-bottom: 0px;
+    .about-us-img-3 {
+        background-image: url('../Images/aboutus3.jpg');
     }
     
-    .about-message {
+    .about-us-container {
+        position: absolute;
+        background-color: rgb(37, 53, 81);
+        top: 65%;
+        left: 5%;
+        padding: 55px;
+    }
+    
+    .what-we-container {
+        position: absolute;
+        background-color: rgb(37, 53, 81);
+        top: 65%;
+        right: 5%;
+        padding: 55px;
+    }
+
+    .about-us-container-title {
+        font-size: 50px;
         color: white;
-        padding: 5px 5px 5px;
-        width: 800px;
-        text-align: center;
-        font-size: 31px;
-        margin-block-start: 5px;
-        margin-block-end: 5px;
+    }
+    
+    .about-us-msg-1, .about-us-msg-2 {
+        font-size: 30px;
+        width: 700px;
+        color: white;
+        line-height: 40px;
     }
 }
 
@@ -238,54 +488,62 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
     }
     
     .about-us-text {
-        flex: 500px;
         color: white;
-        font-size: 70px;
-    }
-    
-    .about-us-padding {
-        flex: 1;
-        background-color: green;
-    }
-    
-    .about-us-grid {
-        height: 80vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        background-image: url("../Images/CityDownView.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: left;
-    }
-    
-    .background-box {
-        margin-top: 50px;
-        background-color: rgba(0, 0, 0, 0.8);
-        width: 900px;
-        height: 1000px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .about-message-title {
         font-size: 60px;
-        color: white;
-        margin-bottom: 0px;
+    }
+
+    .about-us-grid {
+        height: 180vh;
+        padding: 100px 50px;
+        background-color: #d6e9f7;
+        display: block;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 0;
+    }
+
+    .about-us-img-2, .about-us-img-3 {
+        margin-top: 500px;
+    }
+
+    .about-us-img-2 {
+        background-image: url('../Images/aboutus2.jpg');
     }
     
-    .about-message {
+    .about-us-img-3 {
+        background-image: url('../Images/aboutus3.jpg');
+    }
+    
+    .about-us-container {
+        position: absolute;
+        background-color: rgb(37, 53, 81);
+        top: 65%;
+        left: 5%;
+        padding: 55px;
+    }
+    
+    .what-we-container {
+        position: absolute;
+        background-color: rgb(37, 53, 81);
+        top: 65%;
+        right: 5%;
+        padding: 55px;
+    }
+
+    .about-us-container-title {
+        font-size: 50px;
         color: white;
-        width: 800px;
-        text-align: center;
+    }
+    
+    .about-us-msg-1, .about-us-msg-2 {
         font-size: 30px;
+        width: 700px;
+        color: white;
+        line-height: 40px;
     }
 }
-

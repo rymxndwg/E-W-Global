@@ -2,7 +2,7 @@ export let serviceLibrary = [
     {
         "service-id": "primary-property-loan",
         "title": "Primary Property Loan",
-        "img": "../Images/house.jpeg",
+        "img": "Images/house.jpeg",
         "our-service": "At E-W Global Mortgage, we specialize in primary property loans, offering tailored solutions to help you secure the home of your dreams. Whether you're a first-time homebuyer or looking to upgrade to your forever home, our dedicated team is here to guide you through every step of the process.",
         "why-us-1": "With E-W Global, you can expect personalized service and attention to detail. We understand that buying a home is one of the most significant financial decisions you'll make, which is why we take the time to understand your unique needs and financial situation. Our experienced professionals will work closely with you to explore loan options, navigate the application process, and secure a mortgage that fits your budget and lifestyle.",
         "why-us-2": "From competitive interest rates to flexible repayment terms, we offer a variety of mortgage products designed to meet your specific needs. Whether you're looking for a conventional loan, FHA loan, VA loan, or USDA loan, we have the expertise and resources to help you find the right solution for your primary property.",
@@ -10,7 +10,7 @@ export let serviceLibrary = [
     }, {
         "service-id": "investment-property-loan",
         "title": "Investment Property Loan",
-        "img": "../Images/investment.jpg",
+        "img": "Images/investment.jpg",
         "our-service": "At E-W Global Mortgage, we specialize in investment property loans, providing customized solutions to help you grow your real estate portfolio. Whether you're a seasoned investor or just getting started, our dedicated team is here to assist you in navigating the complexities of investment property financing.",
         "why-us-1": "When it comes to investment mortgage loans, we understand that every investor's goals and circumstances are unique. That's why we take the time to listen to your investment objectives and tailor our services to meet your specific needs. Whether you're looking to purchase a single-family home, a multi-unit property, or a commercial space, we have the expertise and resources to help you secure the financing you need.",
         "why-us-2": "With E-W Global, you can expect a seamless and transparent loan process from start to finish. Our experienced professionals will guide you through the application process, helping you understand your options and choose the loan that best aligns with your investment strategy. We offer competitive interest rates, flexible terms, and personalized service to ensure that your investment property loan meets your financial goals.",
@@ -18,7 +18,7 @@ export let serviceLibrary = [
     }, {
         "service-id": "commerical-property-loan",
         "title": "Commerical Property Loan",
-        "img": "../Images/Commercial.jpg",
+        "img": "Images/Commercial.jpg",
         "our-service": "E-W Global Mortgage specializes in commercial property loans, providing tailored financing solutions to support your business's real estate needs. Whether you're looking to purchase office space, retail storefronts, industrial warehouses, or any other type of commercial property, our experienced team is here to help you secure the funding you need to achieve your business goals.",
         "why-us-1": "Navigating the world of commercial property financing can be complex, but with E-W Global Mortgage, you'll have a trusted partner by your side. We understand that every business is unique, which is why we take the time to understand your specific needs and objectives. Whether you're a small business owner or a seasoned investor, we'll work closely with you to customize a loan solution that fits your budget and long-term plans.",
         "why-us-2": "With E-W Global, you can expect personalized service and a commitment to excellence at every step of the loan process. Our dedicated professionals will guide you through the application process, helping you navigate the intricacies of commercial lending and ensuring that you have a clear understanding of your financing options. From competitive interest rates to flexible repayment terms, we offer a variety of loan products designed to meet the diverse needs of businesses of all sizes.",
@@ -26,7 +26,7 @@ export let serviceLibrary = [
     }, {
         "service-id": "hard-money-loan",
         "title": "Hard Money, Bridge Loans",
-        "img": "../Images/HardMoney.jpeg",
+        "img": "Images/HardMoney.jpeg",
         "our-service": "E-W Global Mortgage specializes in hard money bridge loans, offering swift and flexible financing solutions to address your short-term funding needs. Whether you're a real estate investor looking to seize opportunities quickly or a property owner in need of fast capital, our dedicated team is here to provide the financial support you require.",
         "why-us-1": "Hard money bridge loans are ideal for situations where traditional financing may not be readily available. With E-W Global, you can access the capital you need with minimal hassle and quick approval times. Our streamlined application process and efficient underwriting ensure that you receive the funds you need when you need them, allowing you to capitalize on time-sensitive opportunities without delay.",
         "why-us-2": "At E-W Global, we understand that every borrower's situation is unique. That's why we take a personalized approach to hard money bridge lending, working closely with you to understand your specific needs and objectives. Whether you're looking to purchase distressed properties, renovate existing assets, or bridge the gap between property acquisitions, we'll customize a loan solution that aligns with your goals.",
@@ -34,7 +34,7 @@ export let serviceLibrary = [
     }, {
         "service-id": "fix-flip-loan",
         "title": "Fix Flip Loans",
-        "img": "../Images/fix-flip.jpeg",
+        "img": "Images/fix-flip.jpeg",
         "our-service": "E-W Global Mortgage specializes in fix and flip loans, providing financing solutions tailored to real estate investors looking to purchase, renovate, and resell properties for profit. Whether you're a seasoned flipper or just getting started in the world of real estate investing, our dedicated team is here to help you secure the funding you need to execute your projects successfully.",
         "why-us-1": "Fix and flip loans are designed to provide investors with the capital required to acquire distressed properties, make necessary renovations, and ultimately sell the properties for a profit. At E-W Global, we understand the unique challenges and opportunities associated with fix and flip projects, which is why we offer flexible loan terms and competitive rates to support your investment endeavors.",
         "why-us-2": "With E-W Global, you'll benefit from a streamlined loan process and personalized service every step of the way. Our experienced professionals will work closely with you to assess your project's scope and financial needs, ensuring that you receive the funding necessary to complete your fix and flip venture on time and within budget.",
@@ -42,7 +42,7 @@ export let serviceLibrary = [
     }, {
         "service-id": "construction-loan",
         "title": "Construction Loans",
-        "img": "../Images/construction-img.jpeg",
+        "img": "Images/construction-img.jpeg",
         "our-service": "E-W Global Mortgage specializes in construction loans, offering financing solutions to support the building of new residential and commercial properties. Whether you're a developer embarking on a large-scale construction project or an individual building your dream home, our experienced team is here to provide the financial support and expertise you need to bring your vision to life.",
         "why-us-1": "Construction loans are unique in that they provide funding in stages as the project progresses. At E-W Global, we understand the complexities of construction financing and are committed to guiding you through the process with transparency and efficiency. From securing initial funding to managing disbursements throughout the construction phases, we'll work closely with you to ensure that your project stays on track and within budget.",
         "why-us-2": "With E-W Global, you can expect flexible loan terms, competitive rates, and personalized service tailored to your specific needs. Our dedicated professionals will take the time to understand your project's scope, timeline, and budget requirements, helping you choose the right loan option to support your construction goals.",
@@ -50,7 +50,7 @@ export let serviceLibrary = [
     }, {
         "service-id": "foreign-loan",
         "title": "Foreign National Loans",
-        "img": "../Images/nation.jpeg",
+        "img": "Images/nation.jpeg",
         "our-service": "E-W Global Mortgage specializes in foreign national loans, providing financing solutions for non-U.S. residents looking to invest in American real estate. Whether you're an international investor seeking opportunities in the U.S. market or a foreign national looking to purchase a vacation home, our dedicated team is here to assist you in navigating the complexities of cross-border lending.",
         "why-us-1": "Foreign national loans are designed to help non-U.S. citizens or residents secure financing for real estate investments in the United States. At E-W Global, we understand the unique challenges faced by international buyers, which is why we offer specialized loan programs tailored to meet the needs of foreign nationals. From competitive interest rates to flexible repayment terms, we'll work closely with you to customize a loan solution that fits your unique circumstances.",
         "why-us-2": "With E-W Global, you can expect personalized service and support every step of the way. Our experienced professionals will guide you through the loan application process, helping you understand the documentation requirements and ensuring a smooth and efficient experience from start to finish. Whether you're purchasing a primary residence, an investment property, or a vacation home, we're here to help you achieve your real estate goals in the United States.",
@@ -58,7 +58,7 @@ export let serviceLibrary = [
     }, {
         "service-id": "land-loan",
         "title": "Land Loans",
-        "img": "../Images/land.jpeg",
+        "img": "Images/land.jpeg",
         "our-service": "E-W Global Mortgage specializes in land loans, offering financing solutions for individuals and developers looking to purchase vacant land for various purposes. Whether you're planning to build your dream home, develop a commercial property, or invest in land for future use, our experienced team is here to provide the financial support and expertise you need to make your land ownership goals a reality.",
         "why-us-1": "Land loans are unique in that they provide funding specifically for the purchase of vacant land, without any existing structures. At E-W Global, we understand the intricacies of land financing and are committed to guiding you through the process with clarity and efficiency. From securing initial funding to navigating zoning regulations and development plans, we'll work closely with you to ensure a smooth and seamless experience from start to finish.",
         "why-us-2": "With E-W Global, you can expect personalized service tailored to your specific needs and objectives. Our dedicated professionals will take the time to understand your vision for the land and customize a loan solution that aligns with your goals. Whether you're a first-time land buyer or an experienced developer, we're here to provide the support and expertise you need to succeed in your land ownership endeavors.",
@@ -66,7 +66,7 @@ export let serviceLibrary = [
     }, {
         "service-id": "sba-loan",
         "title": "SBA Loans",
-        "img": "../Images/sba.jpeg",
+        "img": "Images/sba.jpeg",
         "our-service": "E-W Global Mortgage specializes in Small Business Administration (SBA) loans, offering financing solutions to support small businesses and entrepreneurs in achieving their goals. Whether you're looking to start a new business, expand your operations, or acquire commercial real estate, our dedicated team is here to provide the financial support and guidance you need to succeed.",
         "why-us-1": "SBA loans are backed by the U.S. Small Business Administration and are designed to help small businesses access affordable financing with favorable terms. At E-W Global, we understand the importance of SBA loans in fueling business growth and are committed to helping entrepreneurs navigate the SBA loan process with ease. From understanding eligibility requirements to preparing the necessary documentation, we'll work closely with you to ensure a smooth and efficient loan application process.",
         "why-us-2": "With E-W Global, you can expect personalized service tailored to your business needs. Our experienced professionals will take the time to understand your unique situation and customize an SBA loan solution that fits your specific goals and financial objectives. Whether you're seeking working capital, financing for equipment purchases, or funds for real estate acquisitions, we're here to help you access the capital you need to thrive.",
@@ -74,7 +74,7 @@ export let serviceLibrary = [
     }, {
         "service-id": "working-loan",
         "title": "Working Capital Loans",
-        "img": "../Images/capital.jpeg",
+        "img": "Images/capital.jpeg",
         "our-service": "E-W Global Mortgage specializes in working capital loans, offering flexible financing solutions to support the ongoing operational needs of businesses. Whether you're looking to cover day-to-day expenses, invest in growth opportunities, or manage seasonal fluctuations, our dedicated team is here to provide the financial support you need to keep your business running smoothly.",
         "why-us-1": "Working capital loans are essential for businesses to maintain liquidity and meet short-term financial obligations. At E-W Global, we understand that access to timely funding is crucial for business success, which is why we offer fast and convenient working capital loan options designed to meet your specific needs. Whether you need funds to cover payroll, purchase inventory, or invest in marketing initiatives, we're here to help.",
         "why-us-2": "With E-W Global, you can expect a seamless and transparent loan process. Our experienced professionals will work closely with you to assess your working capital needs and customize a loan solution that aligns with your business objectives. From competitive interest rates to flexible repayment terms, we'll help you find the right financing option to support your business growth and stability.",
@@ -82,7 +82,7 @@ export let serviceLibrary = [
     }, {
         "service-id": "equipment-loan",
         "title": "Equipment Loans",
-        "img": "../Images/equipment.jpeg",
+        "img": "Images/equipment.jpeg",
         "our-service": "E-W Global Mortgage specializes in equipment loans, providing tailored financing solutions to help businesses acquire the equipment they need to operate efficiently and effectively. Whether you're looking to upgrade your machinery, purchase new technology, or expand your fleet, our dedicated team is here to provide the financial support and expertise you need to make it happen.",
         "why-us-1": "Equipment loans are essential for businesses across various industries to acquire the necessary tools and machinery to remain competitive. At E-W Global, we understand the importance of having access to reliable equipment, which is why we offer flexible financing options designed to meet your specific needs. Whether you're a small business owner or a large corporation, we'll work closely with you to structure a loan solution that fits your budget and business goals.",
         "why-us-2": "With E-W Global, you can expect personalized service and support throughout the loan process. Our experienced professionals will take the time to understand your equipment needs and customize a financing solution that aligns with your objectives. From competitive interest rates to flexible repayment terms, we'll help you find the right loan option to acquire the equipment necessary to drive your business forward.",

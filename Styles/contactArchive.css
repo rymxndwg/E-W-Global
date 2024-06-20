@@ -154,7 +154,7 @@
     background-color: white;
     font-size: 20px;
     width: 600px;
-    height: 600px;
+    height: 650px;
 }
 
 .location-header {
@@ -220,8 +220,6 @@
 
 .san-jose-map {
     display: none;
-    width: 600px;
-    height: 400px;
 }
 
 .san-jose-times {
@@ -238,11 +236,6 @@
 
 .san-jose-hours.active {
     display: block;
-}
-
-.new-york-map {
-    width: 600px;
-    height: 400px;
 }
 
 .new-york-map.active {
@@ -386,575 +379,10 @@
 
 }
 
-@media (max-width: 700px) {
-    .contact-section-bg {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        width: 100vw;
-        min-height: 1000px;
-    }
 
-    .contact-section-div {
-        position: absolute;
-        width: 100vw;
-        height: 180vh;
-        display: flex;
-        flex-direction: column;
-        min-height: 900px;
-    }
-
-    .left-contact-picture {
-        width: 100vw;
-        height: 90vh;
-        min-height: 700px;
-        background-image: url("../Images/lady.webp");
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-    }
-
-    .right-contact-picture {
-        background-image: url("../Images/CityView.jpeg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100vw;
-        height: 90vh;
-        min-height: 700px;
-        filter: contrast(50%);
-    }
-
-    .san-jose-map {
-        width: 550px;
-        height: 400px;
-    }
-
-    .new-york-map {
-        width: 550px;
-        height: 400px;
-    }
-    
-    .left-contact-div {
-        margin-top: 2vh;
-        width: 100vw;
-        height: 700px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .right-contact-div {
-        width: 100vw;
-    }
-
-    .right-contact-box {
-        background-color: white;
-        font-size: 20px;
-        width: 550px;
-        height: 600px;
-    }
-
-    .new-york-times {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-auto-rows: 50px;
-        gap: 5px;
-        padding: 0px 50px;
-        margin-top: -5px;
-    }
-    
-    .san-jose-times.active {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-auto-rows: 50px;
-        gap: 5px;
-        padding: 0px 50px;
-    }
-
-}
-
-/* IPhone 14 */
-@media only screen and (max-device-width: 430px) and (max-device-height: 932px) {
-    .get-in-touch-div {
-        background-color: aqua;
-    }
-}
-
-/* IPhone X */
-@media only screen and (max-device-width: 375px) and (max-device-height: 812px) {
-    .get-in-touch-div {
-        margin-top: -20px;
-        background-color: rgba(4, 57, 98, 1);
-        height: 200px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
-    }
-    
-    .get-in-touch-text {
-        color: white;
-        font-size: 60px;
-    }
-
-    .left-contact-picture {
-        width: 100vw;
-        height: 60vh;
-        background-image: url("../Images/lady.webp");
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-    }
-
-    .right-contact-picture {
-        background-image: url("../Images/CityView.jpeg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100vw;
-        height: 60vh;
-        filter: contrast(50%);
-    }
-
-    .contact-section-div {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        justify-content: space-between;
-        width: 100vw;
-        height: 110vh;
-    }
-
-    .left-contact-div {
-        margin-top: 0;
-        width: 100vw;
-        height: 1000px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .contact-info {
-        background-color: rgba(255, 255, 255, 0.5);
-        width: 800px;
-        height: 800px;
-        margin-top: -2vw;
-        display: flex;
-        flex-direction: column; 
-        align-items: center;
-    }
-    
-    .contact-form {
-        margin-top: -1px;
-        display: flex;
-        flex-direction: column; 
-        align-items: center;
-    }
-    
-    .contact-title {
-        font-size: 70px;
-        text-align: center;
-        margin-top: 25px;
-        font-weight: bold;
-        color: #486595;
-    }
-    
-    .contact-msg {
-        width: 700px;
-        color: black;
-        font-size: 30px;
-    }
-    
-    .input-name {
-        margin-top: 10px;
-        margin-bottom: 5px;
-        font-size: 30px;
-    }
-    
-    .input-box {
-        padding: 10px;
-        width: 700px;
-        background-color: white;
-        transition: 0.25s;
-        font-size: 25px;
-    }
-
-    .input-box-select {
-        padding: 10px;
-        width: 720px;
-        background-color: white;
-        transition: 0.25s;
-        border-width: 2px;
-        font-size: 25px;
-    }
-    
-    .input-box-select, .input-box {
-        border-style: solid;
-        border-color: black;
-    }
-    
-    .input-textarea {
-        border-color: black;
-        border-width: 2px;
-        
-    }
-    
-    .input-box:hover, .input-box-select:hover {
-        background-color: rgba(4, 57, 98, 0.5);
-        border-style: solid;
-        border-color: rgba(255, 255, 255, 0.8);
-        border-width: 3px;
-        color: white;
-    }
-    
-    .input-box:hover::placeholder {
-        color: white;
-    }
-    
-    .contact-input-field button {
-        margin-top: -20px;
-        padding: 20px 30px;
-        background-color: #07568d;
-        color: white;
-        border-width: 0px;
-        transition: 0.25s;
-        font-size: 25px;
-    }
-    
-    .contact-input-field button:hover {
-        cursor: pointer;
-        background-color: rgb(224, 184, 3);
-    }
-
-    .right-contact-div {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 100vw;
-        height: 1000px;
-    }
-
-    .right-contact-box {
-        background-color: white;
-        font-size: 20px;
-        width: 800px;
-        height: 800px;
-    }
-    
-    .location-header {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.2);
-        z-index: 500;
-        position: relative;
-        font-size: 50px;
-    }
-    
-    .new-york-div {
-        flex: 1;
-        text-align: center;
-        height: 50px;
-        padding: 18px 0px;
-        cursor: pointer;
-        background-color: white;;
-        transition: 0.3s ease;
-    }
-    
-    .san-jose-div {
-        flex: 1;
-        text-align: center;
-        height: 50px;
-        padding: 18px 0px;
-        cursor: pointer;
-        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(5, 5, 5, 0.2));
-        transition: 0.3s ease;
-    }
-    
-    .san-jose-div.active {
-        background: white;
-    }
-    
-    .new-york-div.active {
-        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(5, 5, 5, 0.2));
-    }
-
-    .san-jose-map {
-        width: 800px;
-        height: 600px;
-    }
-
-    .new-york-map {
-        width: 800px;
-        height: 600px;
-    }
-    
-    .san-jose-times.active {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-auto-rows: 50px;
-        gap: 5px;
-        padding: 0px 0px;
-        font-size: 25px;
-    }
-    
-    .new-york-times {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-auto-rows: 50px;
-        gap: 5px;
-        padding: 0px 50px;
-        margin-top: -15px;
-        font-size: 25px;
-    }
-    
-    .new-york-hours {
-        flex-basis: 30%;
-    }
-}
-
-/* IPhone 6/7/8 Plus */
-@media only screen and (max-device-width: 414px) and (max-device-height: 736px) {
-    .get-in-touch-div {
-        margin-top: -20px;
-        background-color: rgba(4, 57, 98, 1);
-        height: 200px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
-    }
-    
-    .get-in-touch-text {
-        color: white;
-        font-size: 60px;
-    }
-
-    .left-contact-picture {
-        width: 100vw;
-        height: 60vh;
-        background-image: url("../Images/lady.webp");
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-    }
-
-    .right-contact-picture {
-        background-image: url("../Images/CityView.jpeg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100vw;
-        height: 60vh;
-        filter: contrast(50%);
-    }
-
-    .contact-section-div {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        justify-content: space-between;
-        width: 100vw;
-        height: 120vh;
-    }
-
-    .left-contact-div {
-        margin-top: 0;
-        width: 100vw;
-        height: 1000px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .contact-info {
-        background-color: rgba(255, 255, 255, 0.5);
-        width: 800px;
-        height: 800px;
-        margin-top: -2vw;
-        display: flex;
-        flex-direction: column; 
-        align-items: center;
-    }
-    
-    .contact-form {
-        margin-top: -1px;
-        display: flex;
-        flex-direction: column; 
-        align-items: center;
-    }
-    
-    .contact-title {
-        font-size: 70px;
-        text-align: center;
-        margin-top: 25px;
-        font-weight: bold;
-        color: #486595;
-    }
-    
-    .contact-msg {
-        width: 700px;
-        color: black;
-        font-size: 30px;
-    }
-    
-    .input-name {
-        margin-top: 10px;
-        margin-bottom: 5px;
-        font-size: 30px;
-    }
-    
-    .input-box {
-        padding: 10px;
-        width: 700px;
-        background-color: white;
-        transition: 0.25s;
-        font-size: 25px;
-    }
-
-    .input-box-select {
-        padding: 10px;
-        width: 720px;
-        background-color: white;
-        transition: 0.25s;
-        border-width: 2px;
-        font-size: 25px;
-    }
-    
-    .input-box-select, .input-box {
-        border-style: solid;
-        border-color: black;
-    }
-    
-    .input-textarea {
-        border-color: black;
-        border-width: 2px;
-        
-    }
-    
-    .input-box:hover, .input-box-select:hover {
-        background-color: rgba(4, 57, 98, 0.5);
-        border-style: solid;
-        border-color: rgba(255, 255, 255, 0.8);
-        border-width: 3px;
-        color: white;
-    }
-    
-    .input-box:hover::placeholder {
-        color: white;
-    }
-    
-    .contact-input-field button {
-        margin-top: -20px;
-        padding: 20px 30px;
-        background-color: #07568d;
-        color: white;
-        border-width: 0px;
-        transition: 0.25s;
-        font-size: 25px;
-    }
-    
-    .contact-input-field button:hover {
-        cursor: pointer;
-        background-color: rgb(224, 184, 3);
-    }
-
-    .right-contact-div {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 100vw;
-        height: 1000px;
-    }
-
-    .right-contact-box {
-        background-color: white;
-        font-size: 20px;
-        width: 800px;
-        height: 800px;
-    }
-    
-    .location-header {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.2);
-        z-index: 500;
-        position: relative;
-        font-size: 50px;
-    }
-    
-    .new-york-div {
-        flex: 1;
-        text-align: center;
-        height: 50px;
-        padding: 18px 0px;
-        cursor: pointer;
-        background-color: white;;
-        transition: 0.3s ease;
-    }
-    
-    .san-jose-div {
-        flex: 1;
-        text-align: center;
-        height: 50px;
-        padding: 18px 0px;
-        cursor: pointer;
-        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(5, 5, 5, 0.2));
-        transition: 0.3s ease;
-    }
-    
-    .san-jose-div.active {
-        background: white;
-    }
-    
-    .new-york-div.active {
-        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(5, 5, 5, 0.2));
-    }
-
-    .san-jose-map {
-        width: 800px;
-        height: 600px;
-    }
-
-    .new-york-map {
-        width: 800px;
-        height: 600px;
-    }
-    
-    .san-jose-times.active {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-auto-rows: 50px;
-        gap: 5px;
-        padding: 0px 0px;
-        font-size: 25px;
-    }
-    
-    .new-york-times {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-auto-rows: 50px;
-        gap: 5px;
-        padding: 0px 50px;
-        margin-top: -15px;
-        font-size: 25px;
-    }
-    
-    .new-york-hours {
-        flex-basis: 30%;
-    }
-}
-
-/* IPhone 6/7/8 */
-@media only screen and (max-device-width: 375px) and (max-device-height: 667px) {
+/* ----------- iPhone X ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) { 
     .get-in-touch-div {
         margin-top: -20px;
         background-color: rgba(4, 57, 98, 1);
@@ -995,13 +423,13 @@
         position: absolute;
         justify-content: space-between;
         width: 100vw;
-        height: 130vh;
+        height: 100vh;
     }
 
     .left-contact-div {
         margin-top: 0;
         width: 100vw;
-        height: 1000px;
+        height: 1300px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1011,7 +439,7 @@
     .contact-info {
         background-color: rgba(255, 255, 255, 0.5);
         width: 800px;
-        height: 800px;
+        height: 1400px;
         margin-top: -2vw;
         display: flex;
         flex-direction: column; 
@@ -1026,9 +454,9 @@
     }
     
     .contact-title {
-        font-size: 70px;
+        font-size: 80px;
         text-align: center;
-        margin-top: 25px;
+        margin-top: 100px;
         font-weight: bold;
         color: #486595;
     }
@@ -1036,13 +464,13 @@
     .contact-msg {
         width: 700px;
         color: black;
-        font-size: 30px;
+        font-size: 40px;
     }
     
     .input-name {
         margin-top: 10px;
         margin-bottom: 5px;
-        font-size: 30px;
+        font-size: 35px;
     }
     
     .input-box {
@@ -1050,7 +478,7 @@
         width: 700px;
         background-color: white;
         transition: 0.25s;
-        font-size: 25px;
+        font-size: 35px;
     }
 
     .input-box-select {
@@ -1059,7 +487,7 @@
         background-color: white;
         transition: 0.25s;
         border-width: 2px;
-        font-size: 25px;
+        font-size: 35px;
     }
     
     .input-box-select, .input-box {
@@ -1092,7 +520,6 @@
         color: white;
         border-width: 0px;
         transition: 0.25s;
-        font-size: 25px;
     }
     
     .contact-input-field button:hover {
@@ -1106,14 +533,14 @@
         justify-content: center;
         align-items: center;
         width: 100vw;
-        height: 1000px;
+        height: 1500px;
     }
 
     .right-contact-box {
         background-color: white;
         font-size: 20px;
         width: 800px;
-        height: 800px;
+        height: 1200px;
     }
     
     .location-header {
@@ -1157,12 +584,243 @@
 
     .san-jose-map {
         width: 800px;
-        height: 600px;
+        height: 1000px;
     }
 
     .new-york-map {
         width: 800px;
-        height: 600px;
+        height: 1000px;
+    }
+    
+    .san-jose-times.active {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 50px;
+        gap: 5px;
+        padding: 0px 0px;
+    }
+    
+    .new-york-times {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 50px;
+        gap: 5px;
+        padding: 0px 50px;
+        margin-top: -15px;
+    }
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) { 
+    .get-in-touch-div {
+        margin-top: -20px;
+        background-color: rgba(4, 57, 98, 1);
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
+    }
+    
+    .get-in-touch-text {
+        color: white;
+        font-size: 60px;
+    }
+
+    .left-contact-picture {
+        width: 100vw;
+        height: 70vh;
+        background-image: url("../Images/lady.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    .right-contact-picture {
+        background-image: url("../Images/CityView.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw;
+        height: 70vh;
+        filter: contrast(50%);
+    }
+
+    .contact-section-div {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        justify-content: space-between;
+        width: 100vw;
+        height: 140vh;
+    }
+
+    .left-contact-div {
+        margin-top: 0;
+        width: 100vw;
+        height: 1300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-info {
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 800px;
+        height: 1400px;
+        margin-top: -2vw;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+    
+    .contact-form {
+        margin-top: -1px;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+    
+    .contact-title {
+        font-size: 80px;
+        text-align: center;
+        margin-top: 100px;
+        font-weight: bold;
+        color: #486595;
+    }
+    
+    .contact-msg {
+        width: 700px;
+        color: black;
+        font-size: 40px;
+    }
+    
+    .input-name {
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-size: 35px;
+    }
+    
+    .input-box {
+        padding: 10px;
+        width: 700px;
+        background-color: white;
+        transition: 0.25s;
+        font-size: 35px;
+    }
+
+    .input-box-select {
+        padding: 10px;
+        width: 720px;
+        background-color: white;
+        transition: 0.25s;
+        border-width: 2px;
+        font-size: 35px;
+    }
+    
+    .input-box-select, .input-box {
+        border-style: solid;
+        border-color: black;
+    }
+    
+    .input-textarea {
+        border-color: black;
+        border-width: 2px;
+        
+    }
+    
+    .input-box:hover, .input-box-select:hover {
+        background-color: rgba(4, 57, 98, 0.5);
+        border-style: solid;
+        border-color: rgba(255, 255, 255, 0.8);
+        border-width: 3px;
+        color: white;
+    }
+    
+    .input-box:hover::placeholder {
+        color: white;
+    }
+    
+    .contact-input-field button {
+        margin-top: -20px;
+        padding: 20px 30px;
+        background-color: #07568d;
+        color: white;
+        border-width: 0px;
+        transition: 0.25s;
+    }
+    
+    .contact-input-field button:hover {
+        cursor: pointer;
+        background-color: rgb(224, 184, 3);
+    }
+
+    .right-contact-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 1500px;
+    }
+
+    .right-contact-box {
+        background-color: white;
+        font-size: 20px;
+        width: 800px;
+        height: 1200px;
+    }
+    
+    .location-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.2);
+        z-index: 500;
+        position: relative;
+        font-size: 50px;
+    }
+    
+    .new-york-div {
+        flex: 1;
+        text-align: center;
+        height: 50px;
+        padding: 18px 0px;
+        cursor: pointer;
+        background-color: white;;
+        transition: 0.3s ease;
+    }
+    
+    .san-jose-div {
+        flex: 1;
+        text-align: center;
+        height: 50px;
+        padding: 18px 0px;
+        cursor: pointer;
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(5, 5, 5, 0.2));
+        transition: 0.3s ease;
+    }
+    
+    .san-jose-div.active {
+        background: white;
+    }
+    
+    .new-york-div.active {
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(5, 5, 5, 0.2));
+    }
+
+    .san-jose-map {
+        width: 800px;
+        height: 1000px;
+    }
+
+    .new-york-map {
+        width: 800px;
+        height: 1000px;
     }
     
     .san-jose-times.active {
@@ -1189,8 +847,247 @@
     }
 }
 
-/* IPhone 4 */
-@media only screen and (max-device-width: 320px) {
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px)and (-webkit-min-device-pixel-ratio: 2) {
+    .get-in-touch-div {
+        margin-top: -20px;
+        background-color: rgba(4, 57, 98, 1);
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
+    }
+    
+    .get-in-touch-text {
+        color: white;
+        font-size: 60px;
+    }
+
+    .left-contact-picture {
+        width: 100vw;
+        height: 70vh;
+        background-image: url("../Images/lady.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    .right-contact-picture {
+        background-image: url("../Images/CityView.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw;
+        height: 70vh;
+        filter: contrast(50%);
+    }
+
+    .contact-section-div {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        justify-content: space-between;
+        width: 100vw;
+        height: 140vh;
+    }
+
+    .left-contact-div {
+        margin-top: 0;
+        width: 100vw;
+        height: 1300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-info {
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 800px;
+        height: 1000px;
+        margin-top: -2vw;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+    
+    .contact-form {
+        margin-top: -1px;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+    
+    .contact-title {
+        font-size: 50px;
+        text-align: center;
+        margin-top: 50px;
+        font-weight: bold;
+        color: #486595;
+    }
+    
+    .contact-msg {
+        width: 700px;
+        color: black;
+        font-size: 30px;
+    }
+    
+    .input-name {
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-size: 30px;
+    }
+    
+    .input-box {
+        padding: 10px;
+        width: 700px;
+        background-color: white;
+        transition: 0.25s;
+        font-size: 35px;
+    }
+
+    .input-box-select {
+        padding: 10px;
+        width: 720px;
+        background-color: white;
+        transition: 0.25s;
+        border-width: 2px;
+        font-size: 30px;
+    }
+    
+    .input-box-select, .input-box {
+        border-style: solid;
+        border-color: black;
+    }
+    
+    .input-textarea {
+        border-color: black;
+        border-width: 2px;
+        
+    }
+    
+    .input-box:hover, .input-box-select:hover {
+        background-color: rgba(4, 57, 98, 0.5);
+        border-style: solid;
+        border-color: rgba(255, 255, 255, 0.8);
+        border-width: 3px;
+        color: white;
+    }
+    
+    .input-box:hover::placeholder {
+        color: white;
+    }
+    
+    .contact-input-field button {
+        margin-top: -20px;
+        padding: 20px 30px;
+        background-color: #07568d;
+        color: white;
+        border-width: 0px;
+        transition: 0.25s;
+    }
+    
+    .contact-input-field button:hover {
+        cursor: pointer;
+        background-color: rgb(224, 184, 3);
+    }
+
+    .right-contact-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 1500px;
+    }
+
+    .right-contact-box {
+        background-color: white;
+        font-size: 20px;
+        width: 800px;
+        height: 1000px;
+    }
+    
+    .location-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.2);
+        z-index: 500;
+        position: relative;
+        font-size: 50px;
+    }
+    
+    .new-york-div {
+        flex: 1;
+        text-align: center;
+        height: 50px;
+        padding: 18px 0px;
+        cursor: pointer;
+        background-color: white;;
+        transition: 0.3s ease;
+    }
+    
+    .san-jose-div {
+        flex: 1;
+        text-align: center;
+        height: 50px;
+        padding: 18px 0px;
+        cursor: pointer;
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(5, 5, 5, 0.2));
+        transition: 0.3s ease;
+    }
+    
+    .san-jose-div.active {
+        background: white;
+    }
+    
+    .new-york-div.active {
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(5, 5, 5, 0.2));
+    }
+
+    .san-jose-map {
+        width: 800px;
+        height: 800px;
+    }
+
+    .new-york-map {
+        width: 800px;
+        height: 800px;
+    }
+    
+    .new-york-times {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 50px;
+        gap: 5px;
+        padding: 0px 50px;
+        margin-top: -15px;
+        font-size: 25px;
+    }
+    
+    .san-jose-times.active {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 50px;
+        gap: 5px;
+        padding: 0px 50px;
+        font-size: 25px;
+    }
+    
+    .new-york-hours {
+        flex-basis: 30%;
+    }
+}
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
     .get-in-touch-div {
         margin-top: -20px;
         background-color: rgba(4, 57, 98, 1);
@@ -1328,7 +1225,6 @@
         color: white;
         border-width: 0px;
         transition: 0.25s;
-        font-size: 25px;
     }
     
     .contact-input-field button:hover {

@@ -312,10 +312,8 @@
     }
 }
 
-/* ----------- iPhone X ----------- */
-
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) { 
+/* IPhone 14 */
+@media only screen and (max-device-width: 430px) and (max-device-height: 932px) {
     .loan-name-div {
         margin-top: -20px;
         background-color: rgba(4, 57, 98, 1);
@@ -333,9 +331,9 @@
     }
 
     .hero-div {
-        display: flex;
+        display: block;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
         padding: 0px 0px;
     }
@@ -358,12 +356,12 @@
         position: absolute;
         width: 900px;
         height: 500px;
-        left: auto;
+        left: -55px;
     }
 
     .right-hero-side {
         flex: 1;
-        width: 70vw;
+        width: 100%;
         margin-top: 80px;
         display: flex;
         flex-direction: column;
@@ -373,7 +371,7 @@
 
     .our-services-title {
         font-weight: bold;
-        margin-top: 200px;
+        margin-top: 300px;
         font-size: 50px;
         width: 800px;
     }
@@ -416,10 +414,8 @@
     }
 }
 
-/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) { 
+/* IPhone X */
+@media only screen and (max-device-width: 375px) and (max-device-height: 812px) {
     .loan-name-div {
         margin-top: -20px;
         background-color: rgba(4, 57, 98, 1);
@@ -437,9 +433,9 @@
     }
 
     .hero-div {
-        display: flex;
+        display: block;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
         padding: 0px 0px;
     }
@@ -462,12 +458,12 @@
         position: absolute;
         width: 900px;
         height: 500px;
-        left: auto;
+        left: -55px;
     }
 
     .right-hero-side {
         flex: 1;
-        width: 70vw;
+        width: 100%;
         margin-top: 80px;
         display: flex;
         flex-direction: column;
@@ -477,7 +473,7 @@
 
     .our-services-title {
         font-weight: bold;
-        margin-top: 200px;
+        margin-top: 300px;
         font-size: 50px;
         width: 800px;
     }
@@ -520,10 +516,8 @@
     }
 }
 
-/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
-
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px)and (-webkit-min-device-pixel-ratio: 2) {
+/* IPhone 6/7/8 Plus */
+@media only screen and (max-device-width: 414px) and (max-device-height: 736px) {
     .loan-name-div {
         margin-top: -20px;
         background-color: rgba(4, 57, 98, 1);
@@ -541,7 +535,7 @@
     }
 
     .hero-div {
-        display: flex;
+        display: block;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -566,12 +560,12 @@
         position: absolute;
         width: 900px;
         height: 500px;
-        left: auto;
+        left: -55px;
     }
 
     .right-hero-side {
         flex: 1;
-        width: 70vw;
+        width: 100%;
         margin-top: 80px;
         display: flex;
         flex-direction: column;
@@ -581,7 +575,7 @@
 
     .our-services-title {
         font-weight: bold;
-        margin-top: 200px;
+        margin-top: 300px;
         font-size: 50px;
         width: 800px;
     }
@@ -590,7 +584,7 @@
         margin-top: -20px;
         font-size: 35px;
         line-height: 70px;
-        width: 750px;
+        width: 800px;
     }
 
     .why-us-div {
@@ -624,10 +618,110 @@
     }
 }
 
-/* ----------- iPhone 4 and 4S ----------- */
+/* IPhone 6/7/8 */
+@media only screen and (max-device-width: 375px) and (max-device-height: 667px) {
+    .loan-name-div {
+        margin-top: -20px;
+        background-color: rgba(4, 57, 98, 1);
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
+    }
+    
+    .loan-name-text {
+        color: white;
+        font-size: 60px;
+    }
 
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px)and (-webkit-min-device-pixel-ratio: 2) {
+    .hero-div {
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 0px;
+    }
+
+    .left-hero-side {
+        flex: 1;
+        width: 50vw;
+        margin-top: 200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .img-div {
+        background-image: url("../Images/house.jpeg");
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        width: 900px;
+        height: 500px;
+        left: -55px;
+    }
+
+    .right-hero-side {
+        flex: 1;
+        width: 100%;
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .our-services-title {
+        font-weight: bold;
+        margin-top: 300px;
+        font-size: 50px;
+        width: 800px;
+    }
+    
+    .our-services-text {
+        margin-top: -20px;
+        font-size: 35px;
+        line-height: 70px;
+        width: 800px;
+    }
+
+    .why-us-div {
+        margin-top: 2vh;
+    }
+
+    .why-us-title {
+        font-size: 50px;
+        font-weight: bold;
+        width: 800px;
+    }
+    
+    .why-us-text {
+        margin-top: 50px;
+        font-size: 35px;
+        line-height: 70px;
+        width: 800px;
+    }
+    
+    .welcome-btn {
+        background-color: white;
+        color: #07568d;
+        border-color: #07568d;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 5px;
+        padding: 25px;
+        font-size: 40px;
+        transition: 0.25s;
+        margin-top: 10px;
+    }
+}
+
+/* IPhone 4 */
+@media only screen and (max-device-width: 320px) {
     .loan-name-div {
         margin-top: -20px;
         background-color: rgba(4, 57, 98, 1);

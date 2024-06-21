@@ -24,6 +24,7 @@
     justify-content: center;
     gap: 50px;
     margin-top: 25px;
+    margin-bottom: 30px;
 }
 
 .input-div {
@@ -415,7 +416,92 @@
     align-items: center;
 }
 
+.rates-grid-container {
+    display: flex;
+    flex-direction: row;
+    margin: 0px auto 30px auto;
+    justify-content: center;
+    gap: 50px
+}
 
+.fixed-rates-container {
+    width: 400px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.arm-rates-container {
+    width: 400px;
+    height: 460px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.jumbo-rates-container {
+    width: 400px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.fha-rates-container {
+    width: 400px;
+    height: 400px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.va-rates-container {
+    width: 400px;
+    height: 400px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+.ju-rates-container {
+    width: 400px;
+    height: 520px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.rates-header {
+    padding: 15px 30px;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 5px 5px 0px 0px;
+    color: rgb(102, 102, 106);
+}
+
+.header-rates-section {
+    color: rgb(102, 102, 106);
+    display: flex;
+    padding: 0px 25px;
+    gap: 45px
+}
+
+.info-rates-section {
+    display: flex;
+    padding: 0px 25px;
+    gap: 30px
+}
+
+.info-rates-section p{
+    color: black;
+    font-size: 20px;
+}
+
+.rates-bottom-border {
+    width: 90%;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    margin-left: 20px;
+}
+
+.info-rates-disclaimer {
+    display: flex;
+    padding: 0px 25px;
+    line-height: 25px;
+    color: rgb(102, 102, 106);
+}
 
 @media screen and (max-width: 700px) {
     .slider {
@@ -445,7 +531,7 @@
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     .calculator-home {
         display: flex;
         flex-direction: column;
@@ -475,6 +561,15 @@
         width: 600px;
         margin: 50px auto;
         padding: 10px 25px;
+    }
+
+    .rates-grid-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0px auto 30px auto;
+        justify-content: center;
+        align-items: center;
+        gap: 50px
     }
 }
 
@@ -785,6 +880,97 @@
         cursor: pointer;
         transition: 0.3s ease;
         font-size: 20px;
+    }
+
+    .rates-grid-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0px auto 30px auto;
+        justify-content: center;
+        align-items: center;
+        gap: 50px
+    }
+
+    .fixed-rates-container {
+        width: 780px;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+    }
+    
+    .arm-rates-container {
+        width: 780px;
+        height: 760px;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+    }
+    
+    .jumbo-rates-container {
+        width: 780px;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+    }
+    
+    .fha-rates-container {
+        width: 780px;
+        height: 660px;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+    }
+    
+    .va-rates-container {
+        width: 780px;
+        height: 610px;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+    }
+    .ju-rates-container {
+        width: 780px;
+        height: 800px;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+    }
+
+    .rates-header {
+        padding: 15px 30px;
+        background: rgba(0, 0, 0, 0.05);
+        border-radius: 5px 5px 0px 0px;
+        color: rgb(102, 102, 106);
+        font-size: 40px;
+    }
+    
+    .header-rates-section {
+        color: rgb(102, 102, 106);
+        display: flex;
+        padding: 0px 25px;
+        gap: 45px;
+        font-size: 30px;
+    }
+    
+    .info-rates-section {
+        display: flex;
+        padding: 0px 25px;
+        gap: 35px;
+    }
+    
+    .info-rates-section p{
+        color: black;
+        font-size: 30px;
+    }
+    
+    .rates-bottom-border {
+        width: 90%;
+        border-width: 0px 0px 1px 0px;
+        border-style: solid;
+        border-color: rgba(0, 0, 0, 0.2);
+        margin-left: 20px;
+    }
+    
+    .info-rates-disclaimer {
+        display: flex;
+        padding: 0px 25px;
+        line-height: 30px;
+        color: rgb(102, 102, 106);
+        font-size: 30px;
     }
 }
 
@@ -1625,6 +1811,99 @@
         cursor: pointer;
         transition: 0.3s ease;
         font-size: 20px;
+    }
+
+    .rates-grid-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0px auto 30px auto;
+        justify-content: center;
+        align-items: center;
+        gap: 50px
+    }
+
+    .fixed-rates-container {
+        width: 780px;
+        height: 900px;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+    }
+    
+    .arm-rates-container {
+        width: 780px;
+        height: 760px;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+    }
+    
+    .jumbo-rates-container {
+        width: 780px;
+        height: 820px;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+    }
+    
+    .fha-rates-container {
+        width: 780px;
+        height: 660px;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+    }
+    
+    .va-rates-container {
+        width: 780px;
+        height: 610px;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+    }
+    .ju-rates-container {
+        width: 780px;
+        height: 800px;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+    }
+
+    .rates-header {
+        padding: 15px 30px;
+        background: rgba(0, 0, 0, 0.05);
+        border-radius: 5px 5px 0px 0px;
+        color: rgb(102, 102, 106);
+        font-size: 35px;
+    }
+    
+    .header-rates-section {
+        color: rgb(102, 102, 106);
+        display: flex;
+        padding: 0px 25px;
+        gap: 45px;
+        font-size: 30px;
+    }
+    
+    .info-rates-section {
+        display: flex;
+        padding: 0px 25px;
+        gap: 35px;
+    }
+    
+    .info-rates-section p{
+        color: black;
+        font-size: 30px;
+    }
+    
+    .rates-bottom-border {
+        width: 90%;
+        border-width: 0px 0px 1px 0px;
+        border-style: solid;
+        border-color: rgba(0, 0, 0, 0.2);
+        margin-left: 20px;
+    }
+    
+    .info-rates-disclaimer {
+        display: flex;
+        padding: 0px 25px;
+        line-height: 30px;
+        color: rgb(102, 102, 106);
+        font-size: 30px;
     }
 }
 

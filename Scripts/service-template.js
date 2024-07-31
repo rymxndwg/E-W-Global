@@ -11,7 +11,7 @@ serviceLibrary.forEach((curService) => {
     };
 });
 
-//Get HTML Elements
+//Get HTML Elementsa
 const pageTitleName = document.querySelector('.loan-name-text');
 const ourServicesText = document.querySelector('.our-services-text');
 const img = document.querySelector('.img-div');

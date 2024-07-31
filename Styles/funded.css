@@ -1,0 +1,213 @@
+.page-name-div {
+    margin-top: -20px;
+    background-color: rgba(4, 57, 98, 1);
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.page-name-text {
+    flex: 500px;
+    color: white;
+    font-size: 30px;
+}
+
+.div-padding {
+    flex: 1;
+}
+
+.services-grid {
+    display: grid;
+    width: 850px;
+    grid-template-columns: 400px 400px;
+    row-gap: 40px;
+    column-gap: 50px;
+    margin: 50px auto;
+}
+
+.container {
+    background-color: white;
+    width: 400px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.property-img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.horizontal-sec {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 25px;
+    padding: 0px 25px;
+}
+
+.bold-text {
+    font-weight: bold;
+    color: black;
+}
+
+@media (max-width: 1500px) {
+    .services-grid {
+        display: grid;
+        width: 850px;
+        grid-template-columns: 400px 400px;
+        row-gap: 40px;
+        column-gap: 50px;
+        margin: 50px auto;
+    }
+
+}
+
+@media (max-width: 1250px) {
+    .services-grid {
+        display: grid;
+        width: 850px;
+        grid-template-columns: 400px 400px;
+        row-gap: 40px;
+        column-gap: 50px;
+        margin: 50px auto;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .services-grid {
+        display: grid;
+        width: 400px;
+        grid-template-columns: 400px;
+        row-gap: 40px;
+        column-gap: 50px;
+        margin: 50px auto;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .services-grid {
+        display: grid;
+        width: 400px;
+        grid-template-columns: 400px;
+        row-gap: 40px;
+        column-gap: 50px;
+        margin: 50px auto;
+    }
+
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) { 
+    .page-name-div {
+        margin-top: -20px;
+        background-color: rgba(4, 57, 98, 1);
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
+    }
+    
+    .page-name-text {
+        color: white;
+        font-size: 60px;
+    }
+
+    .services-grid {
+        display: grid;
+        width: 700px;
+        grid-template-columns: 600px;
+        row-gap: 40px;
+        column-gap: 50px;
+        margin: 50px auto;
+        font-size: 40px;
+    }
+
+    .container {
+        background-color: white;
+        width: 700px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px)and (-webkit-min-device-pixel-ratio: 2) {
+    .page-name-div {
+        margin-top: -20px;
+        background-color: rgba(4, 57, 98, 1);
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
+    }
+    
+    .page-name-text {
+        color: white;
+        font-size: 60px;
+    }
+    .services-grid {
+        display: grid;
+        width: 700px;
+        grid-template-columns: 600px;
+        row-gap: 40px;
+        column-gap: 50px;
+        margin: 50px auto;
+        font-size: 40px;
+    }
+
+    .container {
+        background-color: white;
+        width: 700px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+
+}
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px)and (-webkit-min-device-pixel-ratio: 2) {
+    .page-name-div {
+        margin-top: -20px;
+        background-color: rgba(4, 57, 98, 1);
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
+    }
+    
+    .page-name-text {
+        color: white;
+        font-size: 60px;
+    }
+
+    .services-grid {
+        display: grid;
+        width: 700px;
+        grid-template-columns: 600px;
+        row-gap: 40px;
+        column-gap: 50px;
+        margin: 50px auto;
+        font-size: 40px;
+    }
+
+    .container {
+        background-color: white;
+        width: 700px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+
+}

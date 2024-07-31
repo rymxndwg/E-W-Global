@@ -29,7 +29,7 @@
 
 .mid-header-sec {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     padding-left: 0px;
     padding-right: 0px;
     min-height: 100px;
@@ -140,6 +140,11 @@
     cursor: pointer;
     color: white;
     font-weight: bold;
+}
+
+.main-menu-link {
+    font-weight: bold;
+    color: white;
 }
 
 .menu-selector-div {

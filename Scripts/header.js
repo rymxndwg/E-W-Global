@@ -29,6 +29,7 @@ const homeLogo = document.querySelector('.header-logo');
 const homeLink = document.querySelector('.js-home');
 const aboutUsLink = document.querySelector('.js-aboutus');
 const servicesLink = document.querySelector('.js-services');
+const fundedLink = document.querySelector('.js-funded');
 const calculatorLink = document.querySelector('.js-calculator');
 const contactUsLink = document.querySelector('.js-contact-us');
 const hamburgerImg = document.querySelector('.hamburger-img');
@@ -63,6 +64,10 @@ servicesLink.addEventListener("click", ()=> {
     if (window.getComputedStyle(contentBlock, null).display == 'none') {
         openPage('services.html');
     }
+});
+
+fundedLink.addEventListener("click", ()=> {
+    openPage('funded.html');
 });
 
 calculatorLink.addEventListener("click", ()=> {

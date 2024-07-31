@@ -35,7 +35,6 @@ export function closeLocation(location) {
 export function sanJose() {
     openLocation("san-jose");
     openLocation("new-york");
-    console.log("Called");
 }
 
 export function newYork() {

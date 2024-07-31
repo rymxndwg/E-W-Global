@@ -23,10 +23,6 @@
 .left-contact-picture {
     width: 50vw;
     height: 90vh;
-    background-image: url("../Images/lady.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
 }
 
 .right-contact-picture {
@@ -56,7 +52,8 @@
 }
 
 .contact-info {
-    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    background-color: rgb(255, 255, 255);
     width: 500px;
     height: 550px;
     margin-top: -2vw;
@@ -75,7 +72,7 @@
 .contact-title {
     font-size: 50px;
     text-align: center;
-    margin-top: 0px;
+    margin: 30px 0px 0px 0px;
     font-weight: bold;
     color: #486595;
 }
@@ -95,6 +92,7 @@
     width: 400px;
     background-color: white;
     transition: 0.25s;
+    border-width: 1px;
 }
 
 .input-box-select {
@@ -102,24 +100,25 @@
     width: 420px;
     background-color: white;
     transition: 0.25s;
-    border-width: 2px;
+    border-width: 1px;
 }
 
 .input-box-select, .input-box {
     border-style: solid;
     border-color: black;
+    border-width: 1px;
 }
 
 .input-textarea {
     border-color: black;
-    border-width: 2px;
+    border-width: 1px;
 }
 
 .input-box:hover, .input-box-select:hover {
     background-color: rgba(4, 57, 98, 0.5);
     border-style: solid;
     border-color: rgba(255, 255, 255, 0.8);
-    border-width: 3px;
+    border-width: 1px;
     color: white;
 }
 
@@ -151,6 +150,7 @@
 }
 
 .right-contact-box {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     background-color: white;
     font-size: 20px;
     width: 600px;
